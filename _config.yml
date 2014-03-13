@@ -25,9 +25,9 @@ rss: /atom.xml ## RSS address.
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/pacman/source/img`.
-favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.     
-apple_icon: img/pacman.jpg  ## size:114px*114px,please put image into the theme folder `/pacman/source/img`.
+  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
+apple_icon: img/jacman.jpg  ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -41,7 +41,7 @@ author_img: img/author.jpg ## size:220px*220px.
 
 #### Font
 ShowCustomFont: true  
-## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
+## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/jacman/source/css`.
 
 #### Toc
 toc:
@@ -54,7 +54,7 @@ toc:
 fancybox: true 
 ## if you use gallery post or want use fancybox please set the value to true.
 ## if you want use fancybox in ANY post please copy the file `fancybox.js`.
-## in theme folder `/pacman/scripts` to your hexo blog folder `../scritps`.
+## in theme folder `/jacman/scripts` to your hexo blog folder `../scritps`.
 
 ### Scroll to top
 totop: true
@@ -88,8 +88,8 @@ jiathis:
 #### Analytics
 google_analytics:
   enable: true
-  id:   UA-46321946-2  ## e.g. UA-1766729-8 your google analytics ID.
-  site: wuchong.me     ## e.g. yangjian.me your google analytics site or set the value as auto.
+  id:   UA-46321946-2  ## e.g. UA-46321946-2 your google analytics ID.
+  site: wuchong.me     ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
