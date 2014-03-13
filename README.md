@@ -1,7 +1,7 @@
 # Jacman
 
-Jacman is a flat and responsive design theme for [Hexo](http://zespia.tw/hexo/) based on [Pacman](https://github.com/A-limon/pacman).
-It's a simple cool theme.Modified some colors and display.
+Jacman is a flat and responsive design theme for [Hexo](http://zespia.tw/hexo/) based on [Pacman](https://github.com/A-limon/pacman).  
+It's a simple and cool theme. Modified some colors and display.
 
 [Demo](http://wuchong.me/)
 
