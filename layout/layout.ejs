@@ -29,6 +29,18 @@
      <% }else{ %>
     <%- page.content %>
   <% } %>
+<% } else if(page.layout=='search'){ %>
+<%- partial('_partial/head') %>
+    <body>
+      <header>
+        <%- partial('_partial/header') %>
+      </header>
+      <div id="container">
+        <%- partial('_partial/search')%>
+      </div>
+      <%- partial('_partial/after_footer') %>
+    </body>
+   </html>
 <% } else if(page.layout=='tags'){ %>
  <%- partial('_partial/head') %>
     <body>

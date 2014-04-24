@@ -62,7 +62,7 @@ totop: true
 
 #### Author information
 author:
-  google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
+  google_plus: 111190881341800841449    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
   intro_line1: "Hello,I'm WuChong. For now I'm a graduate student in Beijing." ## eg: "Hello ,I'm Larry Page in Google."
   intro_line2: "I'll share my learning experience with you at this blog." ## eg: "This is my blog,believe it or not."
   weibo: wuchong1014     ## e.g. 436062867 for http://weibo.com/436062867
@@ -85,6 +85,13 @@ jiathis:
   id: 1889330   ## e.g. 1501277 your jiathis ID. 
   tsina: 2176287895 ## e.g. 1664838973 Your weibo id,It will be used in share button.
 
+#### Custom Search
+google_cse: 
+  enable: true
+  cx: 018294693190868310296:abnhpuysycw ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+## https://www.google.com/cse/
+  
+  
 #### Analytics
 google_analytics:
   enable: true

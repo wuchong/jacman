@@ -16,11 +16,20 @@
 					 <% for (var i in theme.menu){ %>
 						<li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
 					<% } %>
-					<li><form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+					<li>
+ 					<% if	(theme.google_cse.enable){ %>
+					<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					<% } else { %>
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
 						<input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
-					</form></li>
+					</form>
+					<% } %>
+					</li>
 				</ul>
 			</nav>			
 </div>
