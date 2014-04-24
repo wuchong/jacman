@@ -20,7 +20,7 @@ if (page.archive){
   <h2 class="<%= icon %>-icon"><%= title %></h2>
   <% if(page.archive){ %>
   <div class="archiveslist archive-float clearfix">
-   <%- list_archives() %>
+   <%- list_archives({format:'YYYY 年 MM 月'}) %>
  </div>
   <% } %>
 </div>
