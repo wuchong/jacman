@@ -23,3 +23,4 @@ git pull
 ##Configuration
 
 Modify settings in  `/themes/jacman/_config.yml`.
+[Learn More](https://github.com/wuchong/jacman/wiki/How-To-Use-Jacman)
