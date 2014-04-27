@@ -34,6 +34,9 @@
 		<% if(theme.author.douban){ %>
 		<a href="https://www.douban.com/people/<%=theme.author.douban %>" target="_blank" class="icon-douban" title="豆瓣"></a>
 		<% } %>
+		<% if(theme.author.google_plus){ %>
+		<a href="https://plus.google.com/<%=theme.author.google_plus %>?rel=author" target="_blank" class="icon-google_plus" title="Google+"></a>
+		<% } %>
 		<% if(theme.author.email){ %>
 		<a href="mailto:<%=theme.author.email %>" target="_blank" class="icon-email" title="Email Me"></a>
 		<% } %>
