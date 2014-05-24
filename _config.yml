@@ -46,7 +46,7 @@ ShowCustomFont: true
 #### Toc
 toc:
   article: true   ## show contents in article.
-  aside: false     ## show contents in aside.
+  aside: true     ## show contents in aside.
 ## you can set both of the value to true of neither of them.
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
@@ -57,46 +57,53 @@ fancybox: true
 ## in theme folder `/jacman/scripts` to your hexo blog folder `../scritps`.
 
 ### Scroll to top
-totop: true
+totop: true   ##show scroll-to-top in article
 ##if you want to scroll to top in every post set the value to true
 
 #### Author information
 author:
-  google_plus: 111190881341800841449    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "Hello,I'm WuChong. For now I'm a graduate student in Beijing." ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "I'll share my learning experience with you at this blog." ## eg: "This is my blog,believe it or not."
-  weibo: wuchong1014     ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
-  github: wuchong    ## e.g. A-limon for https://github.com/A-limon
-  facebook:   ## e.g. yangjian for https://favebook.com/yangjian
+  intro_line1:  ""  ## eg: "Hello ,I'm Larry Page in Google."
+  intro_line2:  ""  ## eg: "This is my blog,believe it or not."
+  weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  twitter:    ## e.g. wuchong for https://twitter.com/wuchong
+  github:     ## e.g. wuchong for https://github.com/wuchong
+  facebook:   ## e.g. wuchong for https://facebook.com/wuchong
+  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  email:      ## e.g. wuchong1014@gmail.com
+  google_plus:    ## eg:111190881341800841449 for https://plus.google.com/u/0/111190881341800841449
   stackoverflow:  ##3222790   ##e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
-  douban: wuchong1014    ##e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  tsina: 2176287895     ## e.g. 1664838973  Your weibo ID,It will be used in share button.
-  email: #wuchong1014@gmail.com    ##email
+## if you set them, the corresponding  share button will show on the footer
+ 
 
 #### Comment
 duoshuo: 
-  enable: true  ## duoshuo.com
-  short_name: wuchong   ## duoshuo short name.
+  enable: false  ## duoshuo.com
+  short_name:    ##e.g. wuchong   for duoshuo short name.
 
 #### Share button
 jiathis:
-  enable: true ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id: 1889330   ## e.g. 1501277 your jiathis ID. 
-  tsina: 2176287895 ## e.g. 1664838973 Your weibo id,It will be used in share button.
+  enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
+  id:    ## e.g. 1889330 your jiathis ID. 
+  tsina: ## e.g. 2176287895 Your weibo id,It will be used in share button.
 
 #### Custom Search
 google_cse: 
   enable: true
-  cx: 018294693190868310296:abnhpuysycw ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
-## https://www.google.com/cse/
+  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+## https://www.google.com/cse/ 
+## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
+## set the 'front-matter' as
+## layout: search 
+## title: search
+## ---
   
   
 #### Analytics
 google_analytics:
-  enable: true
-  id:   UA-46321946-2  ## e.g. UA-46321946-2 your google analytics ID.
-  site: wuchong.me     ## e.g. wuchong.me your google analytics site or set the value as auto.
+  enable: false
+  id:        ## e.g. UA-46321946-2 your google analytics ID.
+  site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 

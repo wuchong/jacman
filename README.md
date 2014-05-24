@@ -5,6 +5,8 @@ It's a simple and cool theme forked from pacman. Modified some colors and displa
 
 [Demo](http://wuchong.me/)
 
+[How to Use Jacman](https://github.com/wuchong/jacman/wiki/How-To-Use-Jacman)
+
 
 ##Installation
 ###Install
@@ -23,4 +25,4 @@ git pull
 ##Configuration
 
 Modify settings in  `/themes/jacman/_config.yml`.
-[Learn More](https://github.com/wuchong/jacman/wiki/How-To-Use-Jacman)
+[Learn More](https://github.com/wuchong/jacman/wiki)
