@@ -81,6 +81,10 @@ duoshuo:
   enable: false  ## duoshuo.com
   short_name:    ##e.g. wuchong   for duoshuo short name.
 
+disqus:
+  enable: false  ## disqus.com
+  short_name:    ##e.g. wuchong   for disqus short name.  
+
 #### Share button
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.

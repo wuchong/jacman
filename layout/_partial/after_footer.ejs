@@ -107,7 +107,8 @@ $(document).ready(function(){
 });     
 </script>
 <% } %>
-<% if ((page.layout=='post'||page.layout=='page')&&theme.duoshuo.enable && page.comments){ %>
+<% if (page.layout=='post'||page.layout=='page'){ %>
+<% if (theme.duoshuo.enable && page.comments){ %>
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"<%= theme.duoshuo.short_name %>"};
   (function() {
@@ -120,10 +121,13 @@ $(document).ready(function(){
   })();
 </script> 
 <% } %>
-<% if (config.disqus_shortname){ %>
+<% if( (config.disqus_shortname || theme.disqus.enable) && page.comments) { %>
 <script type="text/javascript">
+<% if(config.disqus_shortname){ %>
 var disqus_shortname = '<%= config.disqus_shortname %>';
-
+<% }else{ %>
+var disqus_shortname = '<%= theme.disqus.short_name %>';
+<% } %>
 (function(){
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
@@ -133,6 +137,8 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 }());
 </script>
 <% } %>
+<% } %>
+
 
 <% if (page.layout=='tags'||page.layout=='categories'){ %>
 <script type="text/javascript">
