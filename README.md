@@ -7,6 +7,10 @@ It's a simple and cool theme forked from pacman. Modified some colors and displa
 
 [How to Use Jacman](https://github.com/wuchong/jacman/wiki/How-To-Use-Jacman)
 
+##Newest Feature
+- disqus comment
+- google custom search
+- scroll to top
 
 ##Installation
 ###Install
