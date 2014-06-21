@@ -182,7 +182,7 @@ $(document).ready(function(){
 </script>
 <% } %>
 <%- partial('google_analytics') %>
-<% if ((page.layout=='post'||page.layout=='page')&&theme.fancybox){ %>
+<% if (theme.totop){ %>
 <%- partial('totop') %>
 <script src="<%- config.root %>js/totop.js"></script>
 <% } %>
