@@ -2,6 +2,7 @@
 menu:
   首页: /
   归档: /archives
+  项目: /projects
   关于: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -14,7 +15,7 @@ menu:
 widgets: 
 - category
 - tag
-- links
+- weibo
 - rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo
 ## modify links in `/layout/_widget/links.ejs`.
@@ -27,7 +28,7 @@ imglogo:
   enable: true             ## display image logo true/false.
   src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
-apple_icon: img/jacman.jpg  ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+apple_icon: img/icon.jpg  ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -57,29 +58,29 @@ fancybox: true
 ## in theme folder `/jacman/scripts` to your hexo blog folder `../scritps`.
 
 ### Scroll to top
-totop: true   ##show scroll-to-top in article
+totop: false   ##show scroll-to-top in article
 ##if you want to scroll to top in every post set the value to true
 
 #### Author information
 author:
-  intro_line1:  ""  ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2:  ""  ## eg: "This is my blog,believe it or not."
-  weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  twitter:    ## e.g. wuchong for https://twitter.com/wuchong
-  github:     ## e.g. wuchong for https://github.com/wuchong
-  facebook:   ## e.g. wuchong for https://facebook.com/wuchong
-  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  email:      ## e.g. wuchong1014@gmail.com
-  google_plus:    ## eg:111190881341800841449 for https://plus.google.com/u/0/111190881341800841449
-  stackoverflow:  ##3222790   ##e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+  intro_line1:  "Hello, I'm PhiloSky."  ## eg: "Hello ,I'm Larry Page in Google."
+  intro_line2:  "This is my blog. Hope you enjoy it."  ## eg: "This is my blog,believe it or not."
+  weibo:  5149155301    ## e.g. 5149155301 for http://weibo.com/5149155301
+  twitter:  bluebird1314  ## e.g. bluebird1314 for https://twitter.com/bluebird1314
+  github:  PhiloSky   ## e.g. PhiloSky for https://github.com/PhiloSky
+  facebook:  tjuhanife ## e.g. wuchong for https://facebook.com/tjuhanife
+  douban:  77474730   ## e.g. 77474730 or your id for https://www.douban.com/people/77474730
+  tsina:  5149155301    ## e.g. 5149155301  Your weibo ID,It will be used in share button.
+  email:  tjuhanife@gmail.com    ## e.g. tjuhanife@gmail.com
+  google_plus:  115880271286802328613  ## eg:115880271286802328613 for https://plus.google.com/u/0/115880271286802328613
+  stackoverflow: 3792490 ##3792490   ##e.g. 3222790 for http://stackoverflow.com/users/3792490/PhiloSky
 ## if you set them, the corresponding  share button will show on the footer
  
 
 #### Comment
 duoshuo: 
-  enable: false  ## duoshuo.com
-  short_name:    ##e.g. wuchong   for duoshuo short name.
+  enable: true  ## duoshuo.com
+  short_name:  PhiloSky  ##e.g. PhiloSky   for duoshuo short name.
 
 disqus:
   enable: false  ## disqus.com
@@ -93,8 +94,8 @@ jiathis:
 
 #### Custom Search
 google_cse: 
-  enable: false
-  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+  enable: true
+  cx:  007881724004761432362:oso54v2u1lc ## e.g. 007881724004761432362:oso54v2u1lc your Custom Search ID.
 ## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as

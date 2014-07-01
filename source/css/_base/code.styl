@@ -1,59 +1,48 @@
 // More theme here http//softwaremaniacs.org/media/soft/highlight/test.html
 // Just change those colors
 // https//github.com/chriskempson/tomorrow-theme
-highlight-background = #2d2d2d
-highlight-current-line = #393939
+highlight-background = #1d1f21
+highlight-current-line = #282a2e
 highlight-line-numbers = #666
-highlight-selection = #515151
-highlight-foreground = #cccccc
-highlight-comment = #999999
-highlight-red = #f2777a
-highlight-orange = #f99157
-highlight-yellow = #ffcc66
-highlight-green = #99cc99
-highlight-aqua = #66cccc
-highlight-blue = #6699cc
-highlight-purple = #cc99cc
+highlight-selection = #373b41
+highlight-foreground = #c5c8c6
+highlight-comment = #969896
+highlight-red = #cc6666
+highlight-orange = #de935f
+highlight-yellow = #f0c674
+highlight-green = #b5bd68
+highlight-aqua = #8abeb7
+highlight-blue = #81a2be
+highlight-purple = #b294bb
 
 $code-block
   background highlight-background
   margin 0.5em 0
   padding 0.5em 2%
+  overflow auto
   color highlight-foreground
   line-height line-height
-  font-size 0.8em
+  font-size font-size
   -webkit-border-radius 0.35em
   border-radius 0.35em
-  word-wrap break-word
-  @media phone
-    font-size 0.95em
 
 $line-numbers
   color highlight-line-numbers 
-  font-size 0.4em
-  @media phone
-    font-size 0.95em
-    line-height line-height
+  font-size 0.85em
+  line-height line-height
+  font-size font-size
 
 .article-content   
   pre
     font-family font-mono
     @extend $code-block
-    background color-quote
-    border 1px solid #ccc
     code
-      color color-heading
       background none
       text-shadow none
       padding 0
   .highlight
     @extend $code-block
-    overflow auto
-    font-size 0.4em
-    @media phone
-      font-size 0.95em
     pre
-      @extend $code-block
       border none
       margin 0
       padding 0
@@ -103,9 +92,9 @@ $line-numbers
         background highlight-background
         color highlight-comment
         font 0.85em font-serif
-        text-shadow 0 0
         padding 0
         margin-top 1em
+        text-shadow none
         a
           color color-blue
           font-weight normal
@@ -114,50 +103,58 @@ $line-numbers
 
 pre
   .comment
-  .title
     color highlight-comment
+  .title
   .variable
   .attribute
   .tag
   .regexp
   .ruby .constant
-  .xml .tag .title
-  .xml .pi
-  .xml .doctype
-  .html .doctype
-  .css .id
-  .css .class
-  .css .pseudo
+  .tag .title
+  .pi
+  .doctype
+  .doctype
+  .id
+  .class
+  .pseudo 
     color highlight-red
   .number
   .preprocessor
+  .pragma
   .built_in
   .literal
   .params
-  .constant
+  .constant 
     color highlight-orange
-  .class
-  .ruby .class .title
-  .css .rules .attribute
-    color highlight-green
+  .class .title  
+  .rules .attribute
+    color highlight-yellow
   .string
   .value
   .inheritance
   .header
-  .ruby .symbol
-  .xml .cdata
+  .symbol
+  .cdata
     color highlight-green
-  .css .hexcolor
+  .css .hexcolor 
     color highlight-aqua
   .function
-  .python .decorator
+  .function .title
+  .decorator
   .python .title
-  .ruby .function .title
-  .ruby .title .keyword
+  .title .keyword
   .perl .sub
   .javascript .title
   .coffeescript .title
     color highlight-blue
   .keyword
-  .javascript .function
+  .javascript .function 
     color highlight-purple
+  .coffeescript .javascript
+  .javascript .xml
+  .tex .formula
+  .xml .javascript
+  .xml .vbscript
+  .xml .css
+  .xml .cdata 
+    opacity 0.5
