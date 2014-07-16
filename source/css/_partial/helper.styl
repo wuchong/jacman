@@ -131,17 +131,21 @@ footer.article-footer
   visibility visible
 
 //tags&categories
+.article-catetags
+  @media mini
+    width 60%
 .article-tags,.article-categories
   padding 0.5em 0
   float left
-  width 100%
-  @media phone
-    width 50%
+  /**width 100%**/
+  @media phonemax
+    width 100%
 
 .article-tags
   color lighten(color-gray,20%) 
-  @media mini
-    width 40%
+  margin-left 3em
+  @media phonemax
+    margin-left 0
   span
     position relative
     float left
@@ -165,8 +169,6 @@ footer.article-footer
 .article-categories
   color lighten(color-gray,20%)
   margin-top 0.3em
-  @media mini
-    width 20%
   span
     &:before
       font-family font-icon-family
