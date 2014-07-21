@@ -182,11 +182,16 @@ $(document).ready(function(){
 }); 
 </script>
 <% } %>
+
+<% if (theme.google_analytics.enable){ %>
 <%- partial('google_analytics') %>
+<% } %>
+
 <% if (theme.totop){ %>
 <%- partial('totop') %>
 <script src="<%- config.root %>js/totop.js"></script>
 <% } %>
+
 <% if (page.mathjax){ %>
 <%- partial('mathjax') %>
 <% } %>
