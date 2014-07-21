@@ -182,16 +182,16 @@ $(document).ready(function(){
 }); 
 </script>
 <% } %>
+
+<% if (theme.google_analytics.enable){ %>
 <%- partial('google_analytics') %>
+<% } %>
+
 <% if (theme.totop){ %>
 <%- partial('totop') %>
 <script src="<%- config.root %>js/totop.js"></script>
 <% } %>
-<script type="text/x-mathjax-config"> 
-MathJax.Hub.Config({ 
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]} 
-}); 
-</script>
-<script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
+
+<% if (page.mathjax){ %>
+<%- partial('mathjax') %>
+<% } %>
