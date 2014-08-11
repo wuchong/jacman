@@ -6,7 +6,7 @@
   </h1>
   <p class="article-author">By
        <% if(theme.author.google_plus){ %>
-		<a href="https://plus.google.com/<%=theme.author.google_plus %>?rel=author" title="<%= config.author %>" target="_blank" itemprop="author"><%= config.author %></a>
+		<a href="https://plus.google.com/<%=theme.author.google_plus %>/posts" title="<%= config.author %>" target="_blank" itemprop="author"><%= config.author %></a>
 		<% }else{ %>
 		<a href="<%= config.url %>/about" title="<%= config.author %>" target="_blank" itemprop="author"><%= config.author %></a>
 		<% } %>
