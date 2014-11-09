@@ -13,7 +13,7 @@
 	 <% } %>
 	<div class="social-font" class="clearfix">
 		<% if(theme.author.weibo){ %>
-		<a href="http://weibo.com/<%= theme.author.weibo %>" target="_blank" class="icon-weibo" title="weibo"></a>
+		<a href="http://weibo.com/<%= theme.author.weibo %>" target="_blank" class="icon-weibo" title="微博"></a>
 		<% } %>
 		<% if(theme.author.github){ %>
 		<a href="https://github.com/<%=theme.author.github %>" target="_blank" class="icon-github" title="github"></a>
@@ -27,6 +27,9 @@
 		<% if(theme.author.facebook){ %>
 		<a href="https://www.facebook.com/<%=theme.author.facebook %>" target="_blank" class="icon-facebook" title="facebook"></a>
 		<% } %>
+		<% if(theme.author.linkedin){ %>
+		<a href="https://www.linkedin.com/in/<%=theme.author.linkedin %>" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		<% } %>
 		<% if(theme.author.douban){ %>
 		<a href="https://www.douban.com/people/<%=theme.author.douban %>" target="_blank" class="icon-douban" title="豆瓣"></a>
 		<% } %>
@@ -37,7 +40,7 @@
 		<a href="mailto:<%=theme.author.email %>" target="_blank" class="icon-email" title="Email Me"></a>
 		<% } %>
 	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © <%= new Date().getFullYear() %> 
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © <%= new Date().getFullYear() %> 
 		<% if (config.author) { %>
 		<a href="<%= config.url %>/about" target="_blank" title="<%= config.author %>"><%= config.author %></a>
 		<% } else {%>
