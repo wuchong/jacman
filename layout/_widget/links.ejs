@@ -1,7 +1,10 @@
 <div class="linkslist">
   <p class="asidetitle"><%= __('links') %></p>
     <ul>
-      <li><a href="http://wuchong.me" target="_blank" title="WuChong">Jark's Blog</a></li>
-      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+        <% for (var i in theme.links){ %>
+          <li>
+            <a href="<%- theme.links[i] %>" target="_blank" title="<%= i %>"><%= i %></a>
+          </li>
+        <% } %>
     </ul>
 </div>

@@ -76,6 +76,11 @@ author:
   stackoverflow:  ##3222790   ##e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
  
+ #### Links
+links:
+  Jark's Blog: http://wuchong.me
+  Hexo: http://hexo.io
+  
 
 #### Comment
 duoshuo: 
