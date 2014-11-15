@@ -1,3 +1,6 @@
-<div id="totop">
-<a title="<%= __('totop')%>"><img src="/img/scrollup.png"/></a>
-</div>
+<% if (theme.totop){ %>
+	<div id="totop">
+	<a title="<%= __('totop')%>"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="<%- config.root %>js/totop.js"></script>
+<% } %>

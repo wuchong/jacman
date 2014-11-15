@@ -65,13 +65,13 @@ author:
   intro_line1:  ""  ## eg: "Hello ,I'm Larry Page in Google."
   intro_line2:  ""  ## eg: "This is my blog,believe it or not."
   weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  email:      ## e.g. wuchong1014@gmail.com
   twitter:    ## e.g. wuchong for https://twitter.com/wuchong
   github:     ## e.g. wuchong for https://github.com/wuchong
   facebook:   ## e.g. wuchong for https://facebook.com/wuchong
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
-  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  email:      ## e.g. wuchong1014@gmail.com
   google_plus:    ## eg:111190881341800841449 for https://plus.google.com/u/0/111190881341800841449
   stackoverflow:  ##3222790   ##e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
@@ -116,4 +116,9 @@ google_analytics:
   site:      ## e.g. wuchong.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
-
+baidu_tongji:
+  enable: false
+  sitecode:  ## e.g. 3Fe6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
+cnzz_tongji:
+  enable: false
+  siteid:    ## e.g. 1253575964 your cnzz tongji site id

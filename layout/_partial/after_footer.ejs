@@ -183,15 +183,15 @@ $(document).ready(function(){
 </script>
 <% } %>
 
-<% if (theme.google_analytics.enable){ %>
-<%- partial('google_analytics') %>
-<% } %>
 
-<% if (theme.totop){ %>
+<!-- Analytics Begin -->
+<%- partial('analytics') %>
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
 <%- partial('totop') %>
-<script src="<%- config.root %>js/totop.js"></script>
-<% } %>
+<!-- Totop End -->
 
-<% if (page.mathjax){ %>
+<!-- MathJax Begin -->
 <%- partial('mathjax') %>
-<% } %>
+<!-- MathJax End -->
