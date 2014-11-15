@@ -1,11 +1,11 @@
 <div id="footer" >
-	<% if(theme.author_img_enable == true){ %>
+	<% if(theme.author_img){ %>
 	<div class="line">
 		<span></span>
 		<div class="author"></div>
 	</div>
 	<% } %>
-	<% if(theme.author.intro_line1&&theme.author.intro_line2){ %>
+	<% if(theme.author.intro_line1 || theme.author.intro_line2){ %>
 	<section class="info">
 		<p> <%= theme.author.intro_line1 %> <br/>
 			<%= theme.author.intro_line2 %></p>

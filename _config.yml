@@ -17,7 +17,7 @@ widgets:
 - links
 - rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo
-## modify links in `/layout/_widget/links.ejs`.
+
 
 #### RSS 
 rss: /atom.xml ## RSS address.
@@ -27,17 +27,8 @@ imglogo:
   enable: true             ## display image logo true/false.
   src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/jacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/jacman/source/img`.     
-apple_icon: img/jacman.jpg  ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
-
-#### Author Avatar Picture
-author_img_enable: true ## display author avatar picture
-dataURI: false
-## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
-## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
-author_img_data: 
-## paste the dataURI in ONE LINE and included it by ''.
-author_img: img/author.jpg ## size:220px*220px.
-## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
+apple_icon: img/jacman.jpg ## size:114px*114px,please put image into the theme folder `/jacman/source/img`.
+author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if don't want to display,please don't set this.
 
 #### Font
 ShowCustomFont: true  
@@ -73,7 +64,7 @@ author:
   facebook:   ## e.g. wuchong for https://facebook.com/wuchong
   linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
   google_plus:    ## eg:111190881341800841449 for https://plus.google.com/u/0/111190881341800841449
-  stackoverflow:  ##3222790   ##e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+  stackoverflow:  ##e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
  
  #### Links
