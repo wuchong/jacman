@@ -38,7 +38,7 @@ footer.article-footer
     display block
     position relative
     &:before
-      font-size font-size
+      font-size 1.2em
       font-family font-icon-family
       text-align center
       color color-font
@@ -70,7 +70,8 @@ footer.article-footer
 
 .article-share-qrcode
   &:before
-    content "\f029"
+    font-family font-icon-diao !important
+    content "\f132"
   &:hover
     background color-qrcode
     text-shadow 0 1px darken(color-qrcode, 20%)
