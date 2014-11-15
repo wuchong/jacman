@@ -74,13 +74,8 @@ links:
   
 
 #### Comment
-duoshuo: 
-  enable: false  ## duoshuo.com
-  short_name:    ##e.g. wuchong   for duoshuo short name.
-
-disqus:
-  enable: false  ## disqus.com
-  short_name:    ##e.g. wuchong   for disqus short name.  
+duoshuo_shortname: ## e.g. wuchong   your duoshuo short name.
+disqus_shortname:  ## e.g. wuchong   your disqus short name.
 
 #### Share button
 jiathis:
