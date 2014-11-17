@@ -40,6 +40,31 @@
         display block
         margin 0.5em 0
         font-size 0.9em
+  article.post-expand
+    background color-section
+    margin-bottom 3.5em
+    //-webkit-box-shadow: 2px 2px 3px darken(color-background,20%)
+    //box-shadow: 2px 2px 3px darken(color-background,20%)
+    //-webkit-border-radius: 3px
+    //border-radius: 3px
+    .article-more-link
+      margin-top: 1.5em
+      padding-top: 1em
+      border-top: 2px solid #ddd
+      a
+        display: inline-block
+        line-height: 1em
+        padding: 6px 15px
+        border-radius: 15px
+        background color-background
+        color color-font
+        //text-shadow: 0 1px #fff
+        text-decoration: none
+        &:hover
+          background: color-theme
+          color: #fff
+          text-decoration: none
+          //text-shadow: 0 1px darken(color-theme, 20%)
 #archive-page
   section.post
     a
@@ -53,6 +78,11 @@
 
 .moveMain
   margin-left 10% !important
+
+.unexpand .prev
+  border-left 0.5em solid color-gray
+  &:hover
+    border-left 0.5em solid color-theme
 
 #page-nav
   background color-section
@@ -68,10 +98,7 @@
       color color-theme
   .prev
     float left
-    border-left 0.5em solid color-gray
     transition border-left .5s
-    &:hover
-      border-left 0.5em solid color-theme
     span:before
       font-family font-icon-family
       font-smoothing()
