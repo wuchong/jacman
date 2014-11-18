@@ -1,11 +1,15 @@
-<% if (item.photos && item.photos.length){ %>
-<div class="article-gallery">
-  <div class="article-gallery-photos">
-    <% item.photos.forEach(function(photo, i){ %>
-      <a class="article-gallery-img fancybox" href="<%- photo %>" rel="gallery_<%= item._id %>">
-        <img src="<%- photo %>" itemprop="image">
-      </a>
-    <% }) %>
+<div class="gallery">
+  <div class="photoset">
+    <% if (item.photos.length){ %>
+      <% item.photos.forEach(function(photo){ %>
+        <img src="<%- photo %>">
+      <% }); %>
+    <% } else { %>
+      <img src="<%- item.photos %>">
+    <% } %>
+  </div>
+  <div class="control">
+    <div class="prev"></div>
+    <div class="next"></div>
   </div>
 </div>
-<% } %>
