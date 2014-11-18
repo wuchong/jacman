@@ -1,4 +1,7 @@
 <script src="<%- config.root %>js/jquery-2.0.3.min.js"></script>
+<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
+<script src="<%- config.root %>js/gallery.js"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){ 
   $('.navbar').click(function(){
@@ -78,7 +81,7 @@ $(document).ready(function(){
 });
 </script>
 <% } %>
-<% if ((page.layout=='post'||page.layout=='page')&&!theme.jiathis.enable) { %>
+<% if ((page.layout=='post'||page.layout=='page'||page.layout=='photo')&&!theme.jiathis.enable) { %>
 <script type="text/javascript">
 $(document).ready(function(){ 
   var $this = $('.share'),
@@ -108,7 +111,7 @@ $(document).ready(function(){
 });     
 </script>
 <% } %>
-<% if (page.layout=='post'||page.layout=='page'){ %>
+<% if (page.layout=='post'||page.layout=='page'||page.layout=='photo'){ %>
 <% if (theme.duoshuo_shortname && page.comments){ %>
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"<%= theme.duoshuo_shortname %>"};
@@ -160,7 +163,7 @@ $(document).ready(function(){
   }); 
 </script>
 <% } %>
-<% if ((page.layout=='post'||page.layout=='page')&&theme.fancybox){ %>
+<% if ((page.layout=='post'||page.layout=='page'||page.layout=='photo')&&theme.fancybox){ %>
 <link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">

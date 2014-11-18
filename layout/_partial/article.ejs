@@ -1,22 +1,25 @@
 <% if (theme.index.expand == true) { %> 
-	<article class="post-expand <%= item.layout %>" itemprop="articleBody"> 
-		<%- partial('post/header') %>
-	<div class="article-content">
-		<%- partial('item/gallery') %>
-		<% if (item.excerpt && index){ %>
+    <% if (item.photos && item.photos.length){ %>
+    <%- partial('post/gallery') %>
+    <% } %>
+    <article class="post-expand <%= item.layout %>" itemprop="articleBody"> 
+        <%- partial('post/header') %>
+    <div class="article-content">
+        <% if (item.excerpt && index){ %>
         <%- item.excerpt %>
         <% } else { %>
         <%- item.content %>
         <% } %>
-		<% if (theme.index.excerpt_link){ %>
-          <p class="article-more-link">
+        
+        <p class="article-more-link">
+          <% if (item.excerpt && index && theme.index.excerpt_link){ %>
             <a href="<%- url_for(item.path) %>#more"><%= theme.index.excerpt_link %></a>
-          </p>
-        <% } %>
-	</div>
-	</article>
+          <% } %>
+       </p>
+    </div>
+    </article>
 <% }else{ %>
-<section class="<%= item.layout %>" itemscope itemprop="blogitem">
+<section class="post" itemscope itemprop="blogitem">
   <% if (item.link) { %> 
     <a href="<%- item.link %>" target="_blank"> 
   <% } else{ %>

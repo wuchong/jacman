@@ -1,20 +1,47 @@
-.article-gallery 
-  background color-section
-  position relative
+.gallery
+    overflow hidden
+    position relative
+    &:hover
+      .control
+        opacity 1
 
-.article-gallery-photos
-  position relative
-  overflow hidden
+    img
+      min-width 100%
+      max-width 100%
+      height auto
+      position absolute
+      top 0
+      left 0
+      opacity 0
 
-.article-gallery-img 
-  display none;
-  max-width 100%
-  &:first-child 
-    display block
-  .loaded
-    position absolute
-    display block
-  img 
-  display block
-  max-width 100%
-  margin 0 auto
+    .control
+      opacity 0
+      transition 0.3s
+
+    .prev, .next
+      position absolute
+      top 0
+      width 50%
+      height 100%
+      cursor pointer
+      &:before
+        position absolute
+        font 24px/1 font-icon-family
+        text-align center
+        width 24px
+        text-shadow 0 0 15px rgba(0,0,0,0.5)
+        color #fff
+        margin-top -12px
+        top 50%
+
+    .prev
+      left 0
+      &:before
+        content '\f053'
+        left 10px
+
+    .next
+      right 0
+      &:before
+        content '\f054'
+        right 10px
