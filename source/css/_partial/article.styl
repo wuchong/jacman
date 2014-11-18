@@ -88,7 +88,7 @@ article
       padding-left 1%
       line-height line-height
       font-size font-size
-      color #808080
+      color color-meta
       footer
         background color-section
         padding 0
@@ -140,10 +140,19 @@ article
       @media tablet 
         padding-top 0.7em
     figcaption,.caption
-      text-align center
       display block
+      margin-top .3em
+      color color-meta
+      position relative
       font-size 0.9em
-      font-weight blod
+      padding-left 1.3em
+      &:before
+        content '\f040'
+        position absolute
+        font 0.9em font-icon-family
+        position absolute
+        left 0
+        top .3em
     .video-container
       position relative;
       padding-top 56%
