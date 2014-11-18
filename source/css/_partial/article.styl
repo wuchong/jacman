@@ -112,7 +112,7 @@ article
       //margin 0.5em 0
     dl dt
       font-weight blod
-    ul li>code,ol li>code,p code,strong code,em code
+    ul li>code,ol li>code,p code,strong code,em code,table th>code,table td>code
       font-family font-mono
       background color-code
       color #D14
@@ -156,16 +156,19 @@ article
         height 100%
         margin-top 0
     table
-      width 100%
+      max-width 100%
       border-collapse collapse
       border-spacing 0
+      margin-top: 1em
       th
         font-weight bold
-        border-bottom 3px solid lighten(color-gray,30%)
-        padding-bottom 0.5em
+        border-bottom 2px solid lighten(color-gray,30%)
+        padding 0.5em
+        line-height: 1.3em
       td 
         border-bottom 1px solid lighten(color-gray,30%)
-        padding 10px 0
+        padding 0.5em
+        line-height: 1.3em
     .pullquote
       text-align left
       width 45%
