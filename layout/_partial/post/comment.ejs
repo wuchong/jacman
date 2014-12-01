@@ -1,10 +1,10 @@
 <% if (theme.duoshuo_shortname && page.comments){ %>
-<section class="comment">
+<section id="comments" class="comment">
 	<div class="ds-thread"></div>
 </section>
 <% } %>
-<% if( (config.disqus_shortname || theme.duoshuo_shortname) && page.comments) { %>
-<section class="comment">
+<% if( (config.disqus_shortname || theme.disqus_shortname) && page.comments) { %>
+<section id="comments" class="comment">
   <div id="disqus_thread">
     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
   </div>
