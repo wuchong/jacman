@@ -40,7 +40,7 @@ git pull origin master
  作者信息，主要用于展示网站右下角的社交网络链接。包括：微博、豆瓣、知乎、邮箱、GitHub、StackOverflow、Twitter、Facebook、Linkedin、Google+。
 - **目录 toc**  
  在文章中和侧边栏可以显示目录。
-- **comments**  
+- **评论 comments**  
  支持 [多说](http://duoshuo.com/) & [disqus](https://disqus.com/) 评论。
 - **分享 jiathis**  
  启用 内建分享工具 或 [加网](http://www.jiathis.com/) 分享系统。
@@ -70,6 +70,10 @@ git pull origin master
 - [MoqiZhan](http://moqizhan.com) - 人生就是不停的战斗
 - [Think Differently](http://think-diff.me/) - If You Can Think Differently, You Can Act Differently.
 - [ylf](http://wangyangyang.gitcafe.com) - 王洋洋
+- [keychar](http://keychar.com) - A technology blog, design & programming.
+- [peng的博客](http://chenpengdsp.com) - 人生就是不停的战斗
+- [More and More](http://aeesky.github.io) -刚起步：）
+- [好久不见](http://dpast.org) - Julian Zhu
 
 如果你正在使用 Jacman主题，欢迎将网址添加到[wiki的网站列表](https://github.com/wuchong/jacman/wiki/Sites)。我会不定期进行整理。
 
