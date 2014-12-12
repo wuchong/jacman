@@ -74,7 +74,7 @@ You can learn how to use them from [Configuration](https://github.com/wuchong/ja
 - [peng的博客](http://chenpengdsp.com) - 人生就是不停的战斗
 - [More and More](http://aeesky.github.io) -刚起步：）
 - [好久不见](http://dpast.org) - Julian Zhu
-- 
+
 If you are using Jacman,you can add your site [here](https://github.com/wuchong/jacman/wiki/Sites) ! I'll push the available sites here.
 
 ##License
