@@ -140,10 +140,30 @@ footer.article-footer
   opacity 1
   visibility visible
 
+//comments-count
+.comments-count
+  color lighten(color-gray,20%)
+  margin-top 0.3em
+  padding 0.5em 0
+  float right
+  span
+    &:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f075"
+
+.comments-count-link
+  padding 0.5em
+  margin 0 0.3em
+  &:hover
+    color color-white !important
+    background color-blue
+
+
 //tags&categories
 .article-catetags
   @media mini
-    width 60%
+    //width 60%
 .article-tags,.article-categories
   padding 0.5em 0
   float left

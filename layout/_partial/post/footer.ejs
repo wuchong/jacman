@@ -1,13 +1,27 @@
 <footer class="article-footer clearfix">
 <%- partial('catetags') %>
-<div class="article-share" id="share">
-<% if(theme.jiathis.enable){ %>
-<div class="share-jiathis">
-  <%- partial('jiathis') %>
- </div>
-<% } else { %>
-  <div data-url="<%- item.permalink %>" data-title="<% if (item.title){ %><%= item.title %> | <% } %><%= config.title %>" data-tsina="<%= theme.author.tsina %>" class="share clearfix">
-  </div>
+<% if (!index){ %>
+	<div class="article-share" id="share">
+	<% if(theme.jiathis.enable){ %>
+	<div class="share-jiathis">
+	  <%- partial('jiathis') %>
+	 </div>
+	<% } else { %>
+	  <div data-url="<%- item.permalink %>" data-title="<% if (item.title){ %><%= item.title %> | <% } %><%= config.title %>" data-tsina="<%= theme.author.tsina %>" class="share clearfix">
+	  </div>
+	<% } %>
+	</div>
 <% } %>
+<% if (index){ %>
+<div class="comments-count">
+	<% if((config.disqus_shortname || theme.disqus_shortname) && !theme.duoshuo_shortname) { %>
+	  	<span></span>
+		<a href="<%- config.root %><%- item.path %>#disqus_thread" class="comments-count-link">Comments</a>
+	<% } else if(theme.duoshuo_shortname) { %>
+	  	<span></span>
+		<a href="<%- item.permalink %>#comments" class="ds-thread-count comments-count-link" data-thread-key="<%- item.path %>" data-count-type="comments">&nbsp;</a>
+	<% } %>
 </div>
+<% } %>
 </footer>
+
