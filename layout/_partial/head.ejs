@@ -33,14 +33,8 @@
     <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
     <% } %>
     <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
-    <% if (theme.author.twitter){ %>
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="<%= theme.author.twitter %>" />
-    <meta name="twitter:title" content="<% if (title){ %><%= title %> | <% } %><%= config.title %>" />
-      <% if (page.description){ %>
-        <meta name="twitter:description" content="<%= page.description %>" />
-      <% } %>
-    <% } %>
+    <%- open_graph({twitter_id: theme.author.twitter, google_plus: theme.author.google_plus}) %>
+
     <% if (theme.rss){ %>
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
