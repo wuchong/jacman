@@ -33,7 +33,7 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
 - **widget**  
  Widgets displaying in sidebar.The category,tag,rss,archive,tagcloud,links,weibo are supported.
 - **Image**  
- Images about favicon, site logo, author image.
+ Images about favicon, site logo, author image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
 - **index**  
  Two different home page display modes.You can visit [Demo](http://wuchong.me/jacman) & [Jark's Blog](http://wuchong.me) to check the difference.
 - **author**  

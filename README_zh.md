@@ -33,7 +33,7 @@ git pull origin master
 - **控件 widget**  
  侧边栏的控件。包括：分类、标签、RSS、归档、标签云、友情链接、微博秀。
 - **图片相关 Image**  
- 设置网站图标、网站logo、作者头像等。
+ 设置网站图标、网站logo、作者头像等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等
 - **首页模式 index**  
  主题提供了两种首页展示模式，你可以访问 [主题演示](http://wuchong.me/jacman) 和 [Jark's Blog](http://wuchong.me) 来了解其不同。
 - **作者 author**  

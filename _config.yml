@@ -32,7 +32,7 @@ author_img: img/author.jpg ## size:220px*220px.display author avatar picture.if 
 
 #### index post is expanding or not 
 index:
-  expand: false           ## default is unexpanding,so you can only see the short description of each post.
+  expand: true           ## default is unexpanding,so you can only see the short description of each post.
   excerpt_link: Read More  
   
 #### Author information
