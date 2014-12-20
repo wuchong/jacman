@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Jacman Theme]]></title>
+  <subtitle><![CDATA[Demo site for jacman theme]]></subtitle>
+  <link href="/jacman/atom.xml" rel="self"/>
+  <link href="http://wuchong.me/jacman/"/>
+  <updated>2014-12-20T06:22:47.655Z</updated>
+  <id>http://wuchong.me/jacman/</id>
+  
+  <author>
+    <name><![CDATA[WuChong]]></name>
+    
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[如何使用 Jacman 主题]]></title>
+    <link href="http://wuchong.me/jacman/how-to-use-jacman/"/>
+    <id>http://wuchong.me/jacman/how-to-use-jacman/</id>
+    <published>2014-11-20T01:58:17.000Z</published>
+    <updated>2014-12-20T05:32:04.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="主题介绍">主题介绍</h2>
+<p><a href="https://github.com/wuchong/jacman" target="_blank" rel="external">Jacman</a> 是一款扁平化，有着响应式设计的 <a href="http://http://hexo.io/" target="_blank" rel="external">Hexo</a> 主题。本站正式使用了 Jacman 主题。Jacman 基于 <a href="https://github.com/A-limon/pacman" target="_blank" rel="external">Pacman</a> 主题修改而来，目前已有很多特性与原主题不同。你可以前往 <a href="http://wuchong.me" target="_blank" rel="external">本站</a> 和 <a href="http://wuchong.me/jacman" target="_blank" rel="external">Demo</a> 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 <a href="https://github.com/wuchong/jacman/issues" target="_blank" rel="external">issue</a>。</p>
+<p>距离当初我把 Jacman 开源至今已有半年零一周了，在这半年里也一直保持着对 Jacman 的更新。看到很多人用这款主题，fork&amp;star 数也越来越好看，我也更有动力继续完善 Jacman。Jacman 自然还有很多改进空间，首先是文档问题，有许多人通过博客、微博、QQ 询问我有关主题的问题，我也意识到之前写的帮助手册可读性太差。正好趁着这次 Jacman 大更新，写篇更详尽、readable 的手册。</p>
+<h2 id="安装指南">安装指南</h2>
+<h3 id="安装">安装</h3>
+<p>在博客根目录下执行如下命令。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/wuchong</span><span class="regexp">/jacman.git themes/jacman</span></div></pre></td></tr></table></figure>
+
+<p>Jacman 需要安装 Hexo 2.7 及以上版本，请先升级您的 Hexo 程序，再启用此主题。</p>
+<h3 id="启用">启用</h3>
+<p>修改你的博客根目录下的<code>_config.yml</code>配置文件中的<code>theme</code>属性，将其设置为<code>jacman</code>。同时建议设置<code>stylus</code>属性中的<code>compress</code>值为true，会自动压缩 CSS 文件，hexo默认配置中不包含这一项，建议开启。如下。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">theme: jacman</div><div class="line">stylus:</div><div class="line">  <span class="built_in">compress</span>: <span class="constant">true</span></div></pre></td></tr></table></figure>
+
+<h3 id="更新">更新</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/jacman</div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+
+<p>请先备份您主题目录下的 <code>_config.yml</code> 文件后再升级。</p>
+<p><a id="more"></a></p>
+<h2 id="配置指南">配置指南</h2>
+<p>Jacman 主题提供了丰富的配置属性，可以实现您对主题的自定义。配置文件<code>_config.yml</code>位于主题根目录下。本次更新对配置文件进行了较大调整，如您之前就使用了 Jacman，也需要您根据以下指南进行相应的修改。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line"><span class="comment">##### 菜单</span></div><div class="line">menu:</div><div class="line">  主页: /</div><div class="line">  归档: /archives</div><div class="line">  关于: /about</div><div class="line"></div><div class="line"><span class="comment">#### 控件</span></div><div class="line">widgets: </div><div class="line">- category</div><div class="line">- tag</div><div class="line">- links</div><div class="line">- rss</div><div class="line"></div><div class="line"><span class="comment">#### RSS </span></div><div class="line">rss: /atom.xml </div><div class="line"></div><div class="line"><span class="comment">#### 图片相关</span></div><div class="line">imglogo:</div><div class="line">  enable: <span class="literal">true</span>               <span class="comment">## 是否显示网站 logo</span></div><div class="line">  src: img/logo.png        </div><div class="line">favicon: img/favicon.ico     <span class="comment">## 网站图标    </span></div><div class="line">apple_icon: img/jacman.jpg   <span class="comment">## 苹果设备上的图标，背景不要透明</span></div><div class="line">author_img: img/author.jpg   <span class="comment">## 网站底部的博主头像</span></div><div class="line"></div><div class="line"><span class="comment">#### 首页相关</span></div><div class="line">index:</div><div class="line">  expand: <span class="literal">true</span>              <span class="comment">## 首页文章是否展开。默认为展开式，显示 Read More。</span></div><div class="line">  excerpt_link: Read More    </div><div class="line">  </div><div class="line"><span class="comment">#### 作者信息</span></div><div class="line">author:</div><div class="line">  intro_line1:  <span class="string">"Hello ,I'm Larry Page in Google."</span>    <span class="comment">## 网站底部的个人介绍</span></div><div class="line">  intro_line2:  <span class="string">"This is my blog,believe it or not."</span>  </div><div class="line">  weibo_verifier:  <span class="comment">## 微博秀的验证码</span></div><div class="line">  tsina:           <span class="comment">## 用于微博秀和微博分享</span></div><div class="line">  weibo:           <span class="comment">## 用于显示网站底部社交按钮，下同</span></div><div class="line">  douban:         </div><div class="line">  zhihu:  </div><div class="line">  email:     </div><div class="line">  twitter:   </div><div class="line">  github:     </div><div class="line">  facebook: </div><div class="line">  linkedin:   </div><div class="line">  google_plus:   </div><div class="line">  stackoverflow:  </div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">#### 目录</span></div><div class="line">toc:</div><div class="line">  article: <span class="literal">true</span>   <span class="comment">## 是否在文章中显示目录</span></div><div class="line">  aside: <span class="literal">true</span>     <span class="comment">## 是否在侧边栏显示目录</span></div><div class="line"></div><div class="line"><span class="comment">#### 友情链接</span></div><div class="line">links:</div><div class="line">  Jark's Blog: http://wuchong.me</div><div class="line">  Hexo: http://hexo.io</div><div class="line">  </div><div class="line"><span class="comment">#### 评论</span></div><div class="line">duoshuo_shortname: </div><div class="line">disqus_shortname:  </div><div class="line"></div><div class="line"><span class="comment">#### 分享按钮</span></div><div class="line">jiathis:</div><div class="line">  enable: <span class="literal">false</span>   <span class="comment">## 默认使用主题内建分享</span></div><div class="line">  id:    </div><div class="line">  tsina: </div><div class="line">  </div><div class="line"><span class="comment">#### 网站统计</span></div><div class="line">google_analytics:</div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  id:            <span class="comment">## google analytics ID.</span></div><div class="line">  site:          <span class="comment">## 网站地址.</span></div><div class="line">baidu_tongji:</div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  sitecode:      <span class="comment">## 百度统计站点特征码</span></div><div class="line">cnzz_tongji:</div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  siteid:        <span class="comment">## CNZZ统计站点ID</span></div><div class="line"></div><div class="line"><span class="comment">#### 杂项</span></div><div class="line">ShowCustomFont: <span class="literal">true</span>  </div><div class="line">fancybox: <span class="literal">true</span>        </div><div class="line">totop: <span class="literal">true</span>           </div><div class="line"></div><div class="line"><span class="comment">#### 自定义搜索</span></div><div class="line">google_cse: </div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  cx:  </div><div class="line">baidu_search:    </div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  id:   </div><div class="line">  site: http://zhannei.baidu.com/cse/search</div></pre></td></tr></table></figure>
+
+<h3 id="属性功能">属性功能</h3>
+<ul>
+<li><strong>菜单 menu</strong><br>默认没有启用 <code>/tags</code> 和 <code>/categories</code>页面，如果需要启用请在博客目录下的<code>source</code>文件夹中分别建立<code>tags</code> 和 <code>categories</code>文件夹每个文件夹中分别包含一个<code>index.md</code>文件。内容为：</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">layout: tags (或categories)</div><div class="line"><span class="header">title: tags (或categories)</span></div><div class="line">---</div></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为主题中已经内置了这两个页面的模板，所以他们会被正确的解析出来。</p>
+<ul>
+<li><p><strong>控件 widgets</strong><br>提供了7种小工具。包括标签、标签云、分类、归档、RSS、友情链接、微博秀。</p>
+<p><strong>友情链接</strong>：友情链接的网址添加可以在<code>links</code>属性下添加。</p>
+<p><strong>微博秀</strong>：需要注意的是，如果要启用微博秀，您必须填上<code>author</code>属性下<code>tsina</code>和<code>weibo_verifier</code>的值，前者是您微博ID，后者是您微博秀的验证码，访问 <a href="http://app.weibo.com/tool/weiboshow" target="_blank" rel="external">http://app.weibo.com/tool/weiboshow</a> 在如下图位置，可以获得您的 verifier，如：我的是<code>b3593ceb</code>。<br><img src="http://ww1.sinaimg.cn/large/81b78497jw1emegd6b0ytj209204pweu.jpg" alt=""></p>
+</li>
+<li><p><strong>图片相关 Image</strong><br>本主题可以设置网站相关图片，例如网站图标（<code>favicon</code>）、网站logo（<code>imglogo</code>）、作者头像（<code>author_img</code>）。建议启用网站logo，格式建议为<code>.svg</code>或<code>.png</code>格式。同时建议提供配套的 favicon 以及在苹果设备上的图标<code>apple_icon</code>（背景不要透明）。</p>
+</li>
+<li><p><strong>首页显示模式 Index</strong><br>目前首页的显示模式支持两种，一种是原先的卡片式（前往 <a href="http://wuchong.me/jacman" target="_blank" rel="external">Demo</a> 预览），另一种是类似官方主题的文章展开式（<a href="http://wuchong.me" target="_blank" rel="external">本站</a>即采用的这种）。两者各有优劣，前者首页加载速度更快，后者文章内容更能吸引读者。主题默认采用后一种展开式，如需开启第一种卡片式，请设置<code>index</code>属性下的<code>expand: false</code>。</p>
+<p>卡片式的文章摘要是截取文章内容的前140个字，也可以自己总结<code>description</code>并将其放在开头的<code>front-matter</code>中。展开式的文章摘要就是使用<code>&lt;!-- more --&gt;</code>截取了。</p>
+</li>
+<li><p><strong>作者信息 author</strong><br>作者信息，建议尽量填写完整。其中<code>tsina</code>是你的新浪微博ID，不同于用户名或微博主页地址。启用这个属性后，其他用户在微博上分享你文章的同时会自动@你。同时它和<code>weibo_verifier</code>一起作用生成微博秀。<code>intro_line1</code>和<code>intro_line2</code>是网站底部的个人介绍。<code>weibo</code>、<code>twitter</code>、<code>facebook</code>等是用来显示网站右下角的社交按钮的，如下图所示。<br><img src="http://ww4.sinaimg.cn/large/81b78497jw1emgscr3575j2078050jrc.jpg" alt=""></p>
+</li>
+<li><p><strong>目录 toc</strong><br>是否启用在文章中或侧边栏中的目录功能。二者可以都为<code>true</code>或都为<code>false</code>。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的<code>front-matter</code>中加上一行<code>toc: false</code>。如果希望在某一篇文章中关闭目录自动编号功能你可以在文章文件开头的<code>front-matter</code>中加上一行<code>list_number: false</code>。另外 hexo 2.5.2 开始支持中文目录，想获得更好的体验请升级你的 Hexo 版本。</p>
+</li>
+<li><p><strong>评论 comments</strong><br>填写<code>duoshuo_shortname</code><a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>的用户名，启用多说评论系统。在大陆地区更好用的评论系统。</p>
+<p>填写<code>disqus_shortname</code><a href="http://disqus.com/" target="_blank" rel="external">disqus</a> 的用户名，启用 disqus 评论系统。国际上更广泛使用的评论系统。设置博客根目录下的<code>_config.yml</code>文件中的<code>disqus_shortname</code>同样也能开启该功能。</p>
+</li>
+<li><p><strong>加网分享 jiathis</strong><br><a href="http://www.jiathis.com/" target="_blank" rel="external">加网</a>分享系统。默认关闭，因为主题已经内置了原生的分享功能。</p>
+</li>
+<li><p><strong>网站统计 Analytics</strong><br><code>google_analytics</code>：Google Analytics追踪代码。请注意：Google Analytics已经升级到了Universal Analytics。请先前往后台升级你的Google Analytics版本后再启用追踪代码，更多信息请<a href="https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN" target="_blank" rel="external">点击这里</a>了解。</p>
+<p><code>baidu_tongji</code>：百度统计功能。需要填写站点特征码<code>sitecode</code>，在<a href="http://tongji.baidu.com/web/welcome/login" target="_blank" rel="external">官网</a>注册并配置站点后，获取特征码。特征码可以在「网站中心」-&gt; 「代码获取」中查看，如下图所示的<code>e6d1f421bbc9962127a50488f9ed37d1</code>，注意去掉前面的<code>3F</code>。<br><img src="http://ww4.sinaimg.cn/large/81b78497jw1emf4v6qf91j20kf07sq8v.jpg" alt=""></p>
+<p><code>cnzz_tongji</code>：站长统计功能。需要填写站点ID<code>siteid</code>，同理在<a href="http://www.cnzz.com" target="_blank" rel="external">站长官网</a>注册并配置站点后获得。</p>
+</li>
+<li><p><strong>数学公式 mathjax</strong><br>主题支持写 LaTex 数学公式。只需要在文章文件开头的<code>front-matter</code>中，加上一行<code>mathjax: true</code>，即可在文中写 LaTex 公式。</p>
+</li>
+<li><p><strong>图片浏览 fancybox</strong><br>默认关闭，如果你使用 Hexo 经常发表 Gallery 类型的文章，那么请设置为<code>true</code>。</p>
+</li>
+<li><p><strong>返回顶部 totop</strong><br>右下角<code>返回顶部</code>按钮，默认开启。</p>
+</li>
+<li><p><strong>自定义字体 ShowCustomFont</strong><br>是否启用自定义字体，默认开启，主要用于显示网站底部的字体。如果你有一定前端基础可以修改 font.styl 替换为你喜欢的字体。</p>
+</li>
+<li><p><strong>自定义搜索 Search</strong><br><code>baidu_search</code>：如果开启百度站内搜索需要登录 <a href="http://zn.baidu.com/" target="_blank" rel="external">百度站内搜索</a>，配置好你的站点，并开启站内搜索获取搜索ID，另外<code>site</code>属性可以填默认值，也可以填自己做了CNAME的二级域名，更详细的可以阅读<a href="http://gengbiao.me/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/" target="_blank" rel="external">这篇博客</a>了解。</p>
+<p><code>google_cse</code>：如果开启谷歌自定义搜索需要先登录 <a href="https://www.google.com/cse/" target="_blank" rel="external">Google CSE</a>，配置好你的站点，并获得此自定义搜索的ID。此外你需要在博客目录下的<code>source</code>文件夹中建立<code>search</code>文件夹并包含一个<code>index.md</code>文件。内容为：</p>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">layout: search</div><div class="line"><span class="header">title: search</span></div><div class="line">---</div></pre></td></tr></table></figure>
+
+
+
+
+
+
+<h2 id="常见问题">常见问题</h2>
+<ul>
+<li><p><strong>Q：图片默认都是居左的，我怎么设置能让图片居中呢？</strong></p>
+<blockquote>
+<p>使用 <code>&lt;img src=&quot;&quot; style=&quot;display:block;margin:auto&quot;/&gt;</code>的HTML标签。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：如何建立一篇图片类文章（Gallery Post）？</strong></p>
+<blockquote>
+<p>使用<code>hexo new photo &quot;your titile&quot;</code>建立图片类文章，或者直接新建一个 Markdown 文件，将其<code>front-matter</code>修改为如下，即可看到主题为图片类文章提供的样式，<a href="http://wuchong.me/jacman/gallery" target="_blank" rel="external">Demo</a>。</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">---</span></div><div class="line">layout: photo</div><div class="line">title: Gallery Post</div><div class="line">photos:</div><div class="line"><span class="bullet">- </span>http://i.minus.com/ibobbTlfxZgITW.jpg</div><div class="line"><span class="header">- http://i.minus.com/iedpg90Y0exFS.jpg</span></div><div class="line">---</div></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>Q：我在配置文件中给某一项设置了值，但为什么总是看不到效果啊？</strong></p>
+<blockquote>
+<p><code>_config.yml</code>文件中的每个属性值前面必须留一个空格，建议在 Sublime/Notepad++ 中开启显示所有空格模式。另每篇文章的 <code>front-matter</code> 也要注意这个问题。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：如何建立自我介绍页面（About 页面）？</strong></p>
+<blockquote>
+<p>首先在主目录找到<code>_config.yml</code>，找到url添加<code>about_dir: about</code>到这个板块。然后在<code>/source</code>里面建立about文件夹。在about文件夹里建立index.md。编辑index.md就和发布其他的文章一样，格式都一样。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：怎么提意见和建议？</strong></p>
+<blockquote>
+<p>主题还在不断完善中，欢迎 <a href="https://github.com/wuchong/jacman/issues" target="_blank" rel="external">open issue</a> 来提建议，参与讨论。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：楼主我不喜欢你的配色，怎么换主题的颜色呢？</strong></p>
+<blockquote>
+<p>包括颜色在内的很多变量都在<code>jacman/source/css/_base/variable.styl</code>文件中，可以修改成你喜欢的。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：英语更能突显我的逼格，怎么换成英语？</strong></p>
+<blockquote>
+<p>配置你的博客根目录下的<code>_config.yml</code>，去掉<code>language: zh-CN</code>。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：为什么我修改了配置文件/发表了博文，解析出来的却是乱码呢？ </strong></p>
+<blockquote>
+<p>请将你的配置文件/markdown文件保存成 <code>UTF-8</code> 格式。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：为什么开启了微博秀后，显示是空白的，没有内容展示？ </strong></p>
+<blockquote>
+<p>每次修改参数都会这样，需要多刷新几次或者上传到服务器上就好了。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：博主 Jacman Demo 站点中文章的 md 源文件在哪能看到呢？ </strong></p>
+<blockquote>
+<p>我将 Demo 站点所有源文件放在了 Jacman 的 <a href="https://github.com/wuchong/jacman/tree/site" target="_blank" rel="external">site</a> 分支下。</p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+    <summary type="html"><![CDATA[<h2 id="主题介绍">主题介绍</h2>
+<p><a href="https://github.com/wuchong/jacman" target="_blank" rel="external">Jacman</a> 是一款扁平化，有着响应式设计的 <a href="http://http://hexo.io/" target="_blank" rel="external">Hexo</a> 主题。本站正式使用了 Jacman 主题。Jacman 基于 <a href="https://github.com/A-limon/pacman" target="_blank" rel="external">Pacman</a> 主题修改而来，目前已有很多特性与原主题不同。你可以前往 <a href="http://wuchong.me" target="_blank" rel="external">本站</a> 和 <a href="http://wuchong.me/jacman" target="_blank" rel="external">Demo</a> 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 <a href="https://github.com/wuchong/jacman/issues" target="_blank" rel="external">issue</a>。</p>
+<p>距离当初我把 Jacman 开源至今已有半年零一周了，在这半年里也一直保持着对 Jacman 的更新。看到很多人用这款主题，fork&amp;star 数也越来越好看，我也更有动力继续完善 Jacman。Jacman 自然还有很多改进空间，首先是文档问题，有许多人通过博客、微博、QQ 询问我有关主题的问题，我也意识到之前写的帮助手册可读性太差。正好趁着这次 Jacman 大更新，写篇更详尽、readable 的手册。</p>
+<h2 id="安装指南">安装指南</h2>
+<h3 id="安装">安装</h3>
+<p>在博客根目录下执行如下命令。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/wuchong</span><span class="regexp">/jacman.git themes/jacman</span></div></pre></td></tr></table></figure>
+
+<p>Jacman 需要安装 Hexo 2.7 及以上版本，请先升级您的 Hexo 程序，再启用此主题。</p>
+<h3 id="启用">启用</h3>
+<p>修改你的博客根目录下的<code>_config.yml</code>配置文件中的<code>theme</code>属性，将其设置为<code>jacman</code>。同时建议设置<code>stylus</code>属性中的<code>compress</code>值为true，会自动压缩 CSS 文件，hexo默认配置中不包含这一项，建议开启。如下。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">theme: jacman</div><div class="line">stylus:</div><div class="line">  <span class="built_in">compress</span>: <span class="constant">true</span></div></pre></td></tr></table></figure>
+
+<h3 id="更新">更新</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/jacman</div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+
+<p>请先备份您主题目录下的 <code>_config.yml</code> 文件后再升级。</p>
+<p>]]></summary>
+    
+      <category term="Hexo" scheme="http://wuchong.me/jacman/tags/Hexo/"/>
+    
+      <category term="Jacman" scheme="http://wuchong.me/jacman/tags/Jacman/"/>
+    
+      <category term="Hexo" scheme="http://wuchong.me/jacman/categories/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Table]]></title>
+    <link href="http://wuchong.me/jacman/table/"/>
+    <id>http://wuchong.me/jacman/table/</id>
+    <published>2014-11-18T09:02:24.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>This a test post for tables.</p>
+<p>测试表格功能。</p>
+<h2 id="绘制表格">绘制表格</h2>
+<p>markdown 提供了简单的语法来绘制表格。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align:right">$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<p><a id="more"></a></p>
+<h2 id="Tables">Tables</h2>
+<p>You can specify column alignment with one or two colons:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Item</th>
+<th style="text-align:right">Value</th>
+<th style="text-align:center">Qty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:left">Pipe</td>
+<td style="text-align:right">$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<h2 id="SmartyPants">SmartyPants</h2>
+<p>SmartyPants converts ASCII punctuation characters into “smart” typographic punctuation HTML entities. For example:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>ASCII</th>
+<th>HTML</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Single backticks</td>
+<td><code>&#39;Isn&#39;t this fun?&#39;</code></td>
+<td>‘Isn’t this fun?’</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Quotes</td>
+<td><code>&quot;Isn&#39;t this fun?&quot;</code></td>
+<td>“Isn’t this fun?”</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>Dashes</td>
+<td><code>-- is en-dash, --- is em-dash</code></td>
+<td>— is en-dash, —- is em-dash</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>That’s all!</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>This a test post for tables.</p>
+<p>测试表格功能。</p>
+<h2 id="绘制表格">绘制表格</h2>
+<p>markdown 提供了简单的语法来绘制表格。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align:right">价格</th>
+<th style="text-align:center">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align:right">$1600</td>
+<td style="text-align:center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align:right">$12</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align:right">$1</td>
+<td style="text-align:center">234</td>
+</tr>
+</tbody>
+</table>
+<p>]]></summary>
+    
+      <category term="table" scheme="http://wuchong.me/jacman/tags/table/"/>
+    
+      <category term="Table" scheme="http://wuchong.me/jacman/categories/Table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Gallery]]></title>
+    <link href="http://wuchong.me/jacman/gallery/"/>
+    <id>http://wuchong.me/jacman/gallery/</id>
+    <published>2014-11-18T07:45:20.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>Nunc dignissim volutpat enim, non sollicitudin purus dignissim id. Nam sit amet urna eu velit lacinia eleifend. Proin auctor rhoncus ligula nec aliquet. Donec sodales molestie lacinia. Curabitur dictum faucibus urna at convallis. Aliquam in lectus at urna rutrum porta. In lacus arcu, molestie ut vestibulum ut, rhoncus sed eros. Sed et elit vitae risus pretium consectetur vel in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus turpis quis lectus rhoncus adipiscing. Proin pulvinar placerat suscipit. Maecenas imperdiet, quam vitae varius auctor, enim mauris vulputate sapien, nec laoreet neque diam non quam.</p>
+<a id="more"></a>
+
+<p><img src="http://ww1.sinaimg.cn/large/81b78497jw1emfgts2pt4j21hc0u0k1c.jpg" alt="Wallbase - dgnfly (wallbase.cc/wallpaper/1384450)"></p>
+<p>Etiam luctus mauris at mi sollicitudin quis malesuada nibh porttitor. Vestibulum non dapibus magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin feugiat hendrerit viverra. Phasellus sit amet nunc mauris, eu ultricies tellus. Sed a mi tortor, eleifend varius erat. Proin consectetur molestie tortor eu gravida. Cras placerat orci id arcu tristique ut rutrum justo pulvinar. Maecenas lacinia fringilla diam non bibendum. Aenean vel viverra turpis. Integer ut leo nisi. Pellentesque vehicula quam ut sapien convallis consequat. Aliquam ut arcu purus, eget tempor purus. Integer eu tellus quis erat tristique gravida eu vel lorem. </p>
+]]></content>
+    <summary type="html"><![CDATA[<p>Nunc dignissim volutpat enim, non sollicitudin purus dignissim id. Nam sit amet urna eu velit lacinia eleifend. Proin auctor rhoncus ligula nec aliquet. Donec sodales molestie lacinia. Curabitur dictum faucibus urna at convallis. Aliquam in lectus at urna rutrum porta. In lacus arcu, molestie ut vestibulum ut, rhoncus sed eros. Sed et elit vitae risus pretium consectetur vel in mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempus turpis quis lectus rhoncus adipiscing. Proin pulvinar placerat suscipit. Maecenas imperdiet, quam vitae varius auctor, enim mauris vulputate sapien, nec laoreet neque diam non quam.</p>
+]]></summary>
+    
+      <category term="consectetur" scheme="http://wuchong.me/jacman/tags/consectetur/"/>
+    
+      <category term="Photo" scheme="http://wuchong.me/jacman/categories/Photo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Code]]></title>
+    <link href="http://wuchong.me/jacman/code/"/>
+    <id>http://wuchong.me/jacman/code/</id>
+    <published>2014-01-08T02:58:17.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>Normal code block:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line">http.createServer(<span class="function"><span class="keyword">function</span> <span class="params">(req, res)</span> </span>{</div><div class="line">  res.writeHead(<span class="number">200</span>, {<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>});</div><div class="line">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">}).listen(<span class="number">1337</span>, <span class="string">'127.0.0.1'</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="string">'Server running at http://127.0.0.1:1337/'</span>);</div></pre></td></tr></table></figure>
+
+<p>Code block:</p>
+<figure class="highlight js"><figcaption><span>Javascript Array Syntax </span><a href="http://j.mp/pPUUmW" target="_blank" rel="external">MDN Documentation</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr1 = <span class="keyword">new</span> <span class="built_in">Array</span>(arrayLength);</div><div class="line"><span class="keyword">var</span> arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>(element0, element1, ..., elementN);</div></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<p>jsFiddle:</p>
+<iframe width="100%" height="300" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>]]></content>
+    <summary type="html"><![CDATA[<p>Normal code block:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>);</div><div class="line">http.createServer(<span class="function"><span class="keyword">function</span> <span class="params">(req, res)</span> </span>{</div><div class="line">  res.writeHead(<span class="number">200</span>, {<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>});</div><div class="line">  res.end(<span class="string">'Hello World\n'</span>);</div><div class="line">}).listen(<span class="number">1337</span>, <span class="string">'127.0.0.1'</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="string">'Server running at http://127.0.0.1:1337/'</span>);</div></pre></td></tr></table></figure>
+
+<p>Code block:</p>
+<figure class="highlight js"><figcaption><span>Javascript Array Syntax </span><a href="http://j.mp/pPUUmW" target="_blank" rel="external">MDN Documentation</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr1 = <span class="keyword">new</span> <span class="built_in">Array</span>(arrayLength);</div><div class="line"><span class="keyword">var</span> arr2 = <span class="keyword">new</span> <span class="built_in">Array</span>(element0, element1, ..., elementN);</div></pre></td></tr></table></figure>
+
+]]></summary>
+    
+      <category term="dolor" scheme="http://wuchong.me/jacman/tags/dolor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[繁體中文測試]]></title>
+    <link href="http://wuchong.me/jacman/traditional-chinese/"/>
+    <id>http://wuchong.me/jacman/traditional-chinese/</id>
+    <published>2013-11-23T09:21:18.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>對國文有興對育<br>目也喜大方？離天這水成個選品黃登種去修大馬下，不在東但門熱有年性的的講康，情別失作西去。</p>
+<p>他何天反，有功過排球與西少青教？國特回的為樓自他表親提子學物：目一引找大性，入轉然……裡之影同幾一電導先好室讀過選續更想大學生文子麼登，地說當年子開靈該？去以氣；是其為考經好這去要他？雖的標太好醫樂。象友府教文家的美車，竟的那改，東投計證國需體麼明速際好超先一且致只熱合理國我。者其同的人活媽放陸麼不為？</p>
+<p>後題進國頭現的，經國上影，該對別點我但我頭許海友就起對線兩，大眼臉、設角充他拉這，世者可大分嚴慢今可快這民事生成，陽日營：入生舉下，了是陽教行！西平應取，心這品來常真影；對有球位同來可那病，童請友那中數這對動，和母問人語大天一認新情多，可像河國情題是就著外位我。</p>
+<p>年能作運黃道結青得講。</p>
+<blockquote>
+<p>高我們又；因了人樣體次續裝文著司見海時民同我的呢不演政照後便外出由聲做二，病於以加，致認論期陽能北水，是想變。學說語得孩行，失氣的再。大金有放色相態，雲入全，族對部布術頭法很中活名不立的他驗：他創金出機又止，局住民油，發媽水上賽的白常、加實外容醫成保而地來型取急這行如界小因物親面辦意讀；西上喜朋身血標一間熱類論問也量家青和公！不器去年產態加狀急竟善可我臺每不是早何，達如理孩活突國是氣下許排以……年母！</p>
+</blockquote>
+<p>認來來果單也去到者走懷；夜包些放知印電為通，苦使河造心文雨！象利的親氣真在岸區車動線方倒提畫備家進們，氣社一國球產國花今步放。</p>
+<p><strong>From <a href="http://www.richyli.com/tool/loremipsum/" target="_blank" rel="external">亂數假文產生器 - Chinese Lorem Ipsum</a></strong></p>
+]]></content>
+    
+    
+      <category term="test" scheme="http://wuchong.me/jacman/tags/test/"/>
+    
+      <category term="文章" scheme="http://wuchong.me/jacman/tags/%E6%96%87%E7%AB%A0/"/>
+    
+      <category term="Web" scheme="http://wuchong.me/jacman/categories/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Elements]]></title>
+    <link href="http://wuchong.me/jacman/elements/"/>
+    <id>http://wuchong.me/jacman/elements/</id>
+    <published>2013-11-23T09:21:18.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="1-_斜体和粗体">1. 斜体和粗体</h3>
+<p>使用 <em> 和 *</em> 表示斜体和粗体。</p>
+<p>示例：</p>
+<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
+<h3 id="2-_分级标题">2. 分级标题</h3>
+<p>使用 === 表示一级标题，使用 —- 表示二级标题。</p>
+<p>示例：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="header">这是一个一级标题</span></div><div class="line">============================</div><div class="line"></div><div class="line"><span class="header">这是一个二级标题</span></div><div class="line">--------------------------------------------------</div><div class="line"></div><div class="line">### 这是一个三级标题</div></pre></td></tr></table></figure>
+
+<p>你也可以选择在行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。</p>
+<h3 id="3-_外链接">3. 外链接</h3>
+<p>使用 [描述](链接地址) 为文字增加外链接。</p>
+<p>示例：</p>
+<p>这是去往 <a href="http://wuchong.me" target="_blank" rel="external">本人博客</a> 的链接。<br><a id="more"></a></p>
+<h3 id="4-_无序列表">4. 无序列表</h3>
+<p>使用 *，+，- 表示无序列表。</p>
+<p>示例：</p>
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+<h3 id="5-_有序列表">5. 有序列表</h3>
+<p>使用数字和点表示有序列表。</p>
+<p>示例：</p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<h3 id="6-_文字引用">6. 文字引用</h3>
+<p>使用 &gt; 表示文字引用。</p>
+<p>示例：</p>
+<blockquote>
+<p>野火烧不尽，春风吹又生。</p>
+</blockquote>
+<h3 id="7-_行内代码块">7. 行内代码块</h3>
+<p>使用 `代码` 表示行内代码块。</p>
+<p>示例：</p>
+<p>让我们聊聊 <code>html</code>。</p>
+<h3 id="8-_代码块">8.  代码块</h3>
+<p>使用 四个缩进空格 表示代码块。</p>
+<p>示例：</p>
+<pre><code>这是一个代码块，此行左侧有四个不可见的空格。
+</code></pre><h3 id="9-_插入图像">9.  插入图像</h3>
+<p>使用 ![描述](图片链接地址) 插入图像。</p>
+<p>示例：</p>
+<p><img src="https://www.zybuluo.com/static/img/my_head.jpg" alt="我的头像"></p>
+]]></content>
+    <summary type="html"><![CDATA[<h3 id="1-_斜体和粗体">1. 斜体和粗体</h3>
+<p>使用 <em> 和 *</em> 表示斜体和粗体。</p>
+<p>示例：</p>
+<p>这是 <em>斜体</em>，这是 <strong>粗体</strong>。</p>
+<h3 id="2-_分级标题">2. 分级标题</h3>
+<p>使用 === 表示一级标题，使用 —- 表示二级标题。</p>
+<p>示例：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="header">这是一个一级标题</span></div><div class="line">============================</div><div class="line"></div><div class="line"><span class="header">这是一个二级标题</span></div><div class="line">--------------------------------------------------</div><div class="line"></div><div class="line">### 这是一个三级标题</div></pre></td></tr></table></figure>
+
+<p>你也可以选择在行首加井号表示不同级别的标题 (H1-H6)，例如：# H1, ## H2, ### H3，#### H4。</p>
+<h3 id="3-_外链接">3. 外链接</h3>
+<p>使用 [描述](链接地址) 为文字增加外链接。</p>
+<p>示例：</p>
+<p>这是去往 <a href="http://wuchong.me" target="_blank" rel="external">本人博客</a> 的链接。<br>]]></summary>
+    
+      <category term="test" scheme="http://wuchong.me/jacman/tags/test/"/>
+    
+      <category term="consectetur" scheme="http://wuchong.me/jacman/tags/consectetur/"/>
+    
+      <category term="Hello" scheme="http://wuchong.me/jacman/categories/Hello/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[]]></title>
+    <link href="http://wuchong.me/jacman/no-title/"/>
+    <id>http://wuchong.me/jacman/no-title/</id>
+    <published>2013-05-08T02:58:17.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>This post doesn’t have a title. Make sure it’s accessible.</p>
+<p>测试没有标题的文章。</p>
+]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Link]]></title>
+    <link href="http://wuchong.me/jacman/link/"/>
+    <id>http://wuchong.me/jacman/link/</id>
+    <published>2012-10-23T09:21:18.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>This is a link post. Clicking on the link should open Google in a new tab or window. </p>
+<p>这是一篇链接类文章，点击该文章应该会弹出链接页面。</p>
+]]></content>
+    
+    
+      <category term="amet" scheme="http://wuchong.me/jacman/tags/amet/"/>
+    
+      <category term="consectetur" scheme="http://wuchong.me/jacman/tags/consectetur/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Categories]]></title>
+    <link href="http://wuchong.me/jacman/categories-post/"/>
+    <id>http://wuchong.me/jacman/categories-post/</id>
+    <published>2012-01-08T02:58:17.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>This post contains 3 categories. Make sure your theme can display all of the categories.</p>
+]]></content>
+    
+    
+      <category term="foo" scheme="http://wuchong.me/jacman/categories/foo/"/>
+    
+      <category term="bar" scheme="http://wuchong.me/jacman/categories/foo/bar/"/>
+    
+      <category term="baz" scheme="http://wuchong.me/jacman/categories/foo/bar/baz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Tags]]></title>
+    <link href="http://wuchong.me/jacman/tags-post/"/>
+    <id>http://wuchong.me/jacman/tags-post/</id>
+    <published>2012-01-08T02:58:17.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>This post contains 3 tags. Make sure your theme can display all of the categories.</p>
+]]></content>
+    
+    
+      <category term="foo" scheme="http://wuchong.me/jacman/tags/foo/"/>
+    
+      <category term="bar" scheme="http://wuchong.me/jacman/tags/bar/"/>
+    
+      <category term="baz" scheme="http://wuchong.me/jacman/tags/baz/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello Jacman]]></title>
+    <link href="http://wuchong.me/jacman/hello-jacman/"/>
+    <id>http://wuchong.me/jacman/hello-jacman/</id>
+    <published>2012-01-03T09:21:18.000Z</published>
+    <updated>2014-11-20T05:24:20.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> to learn how to use.</p>
+]]></content>
+    
+    
+      <category term="hello" scheme="http://wuchong.me/jacman/tags/hello/"/>
+    
+      <category term="Web" scheme="http://wuchong.me/jacman/categories/Web/"/>
+    
+  </entry>
+  
+</feed>

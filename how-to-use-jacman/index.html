@@ -1,0 +1,629 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>如何使用 Jacman 主题 | Jacman Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="WuChong">
+    
+    <meta name="description" itemprop="description" content="Jacman 是一款扁平化，有着响应式设计的 Hexo 主题。本站正式使用了 Jacman 主题。Jacman 基于 Pacman 主题修改而来，而今已有很多特性与原主题不同。你可以前往本站和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。">
+    
+    
+    <meta name="description" content="Jacman 是一款扁平化，有着响应式设计的 Hexo 主题。本站正式使用了 Jacman 主题。Jacman 基于 Pacman 主题修改而来，而今已有很多特性与原主题不同。你可以前往本站和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何使用 Jacman 主题">
+<meta property="og:url" content="http://wuchong.me/jacman/jacman/how-to-use-jacman/">
+<meta property="og:site_name" content="Jacman Theme">
+<meta property="og:description" content="Jacman 是一款扁平化，有着响应式设计的 Hexo 主题。本站正式使用了 Jacman 主题。Jacman 基于 Pacman 主题修改而来，而今已有很多特性与原主题不同。你可以前往本站和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/81b78497jw1emegd6b0ytj209204pweu.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/81b78497jw1emgscr3575j2078050jrc.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/large/81b78497jw1emf4v6qf91j20kf07sq8v.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何使用 Jacman 主题">
+<meta name="twitter:description" content="Jacman 是一款扁平化，有着响应式设计的 Hexo 主题。本站正式使用了 Jacman 主题。Jacman 基于 Pacman 主题修改而来，而今已有很多特性与原主题不同。你可以前往本站和 Demo 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 issue。">
+<meta name="twitter:creator" content="@jarkwu">
+<link rel="publisher" href="111190881341800841449">
+
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jacman Theme" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/jacman/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/jacman/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/jacman/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/jacman/css/style.css" type="text/css">
+
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/jacman/"><img src="/jacman/img/logo.png" alt="Jacman Theme" title="Jacman Theme"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/jacman/" title="Jacman Theme">Jacman Theme</a></h1>
+				<h2 class="blog-motto">Demo site for jacman theme</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/jacman">Home</a></li>
+					
+						<li><a href="/jacman/archives">Archives</a></li>
+					
+						<li><a href="/jacman/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/jacman/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/jacman/how-to-use-jacman/" title="如何使用 Jacman 主题" itemprop="url">如何使用 Jacman 主题</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="https://plus.google.com/111190881341800841449?rel=author" title="WuChong" target="_blank" itemprop="author">WuChong</a>
+		
+  <p class="article-time">
+    <time datetime="2014-11-20T01:58:17.000Z" itemprop="datePublished"> 发表于 2014-11-20</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题介绍"><span class="toc-number">1.</span> <span class="toc-text">主题介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装指南"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置指南"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性功能"><span class="toc-number">3.1.</span> <span class="toc-text">属性功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见问题"><span class="toc-number">4.</span> <span class="toc-text">常见问题</span></a></li></ol>
+		
+		</div>
+		
+		<h2 id="主题介绍">主题介绍</h2>
+<p><a href="https://github.com/wuchong/jacman" target="_blank" rel="external">Jacman</a> 是一款扁平化，有着响应式设计的 <a href="http://http://hexo.io/" target="_blank" rel="external">Hexo</a> 主题。本站正式使用了 Jacman 主题。Jacman 基于 <a href="https://github.com/A-limon/pacman" target="_blank" rel="external">Pacman</a> 主题修改而来，目前已有很多特性与原主题不同。你可以前往 <a href="http://wuchong.me" target="_blank" rel="external">本站</a> 和 <a href="http://wuchong.me/jacman" target="_blank" rel="external">Demo</a> 预览更多关于本主题的更多效果。如果你有任何问题或意见欢迎到 GitHub 发表 <a href="https://github.com/wuchong/jacman/issues" target="_blank" rel="external">issue</a>。</p>
+<p>距离当初我把 Jacman 开源至今已有半年零一周了，在这半年里也一直保持着对 Jacman 的更新。看到很多人用这款主题，fork&amp;star 数也越来越好看，我也更有动力继续完善 Jacman。Jacman 自然还有很多改进空间，首先是文档问题，有许多人通过博客、微博、QQ 询问我有关主题的问题，我也意识到之前写的帮助手册可读性太差。正好趁着这次 Jacman 大更新，写篇更详尽、readable 的手册。</p>
+<h2 id="安装指南">安装指南</h2>
+<h3 id="安装">安装</h3>
+<p>在博客根目录下执行如下命令。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/wuchong</span><span class="regexp">/jacman.git themes/jacman</span></div></pre></td></tr></table></figure>
+
+<p>Jacman 需要安装 Hexo 2.7 及以上版本，请先升级您的 Hexo 程序，再启用此主题。</p>
+<h3 id="启用">启用</h3>
+<p>修改你的博客根目录下的<code>_config.yml</code>配置文件中的<code>theme</code>属性，将其设置为<code>jacman</code>。同时建议设置<code>stylus</code>属性中的<code>compress</code>值为true，会自动压缩 CSS 文件，hexo默认配置中不包含这一项，建议开启。如下。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">theme: jacman</div><div class="line">stylus:</div><div class="line">  <span class="built_in">compress</span>: <span class="constant">true</span></div></pre></td></tr></table></figure>
+
+<h3 id="更新">更新</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> themes/jacman</div><div class="line">git pull origin master</div></pre></td></tr></table></figure>
+
+<p>请先备份您主题目录下的 <code>_config.yml</code> 文件后再升级。</p>
+<p><a id="more"></a></p>
+<h2 id="配置指南">配置指南</h2>
+<p>Jacman 主题提供了丰富的配置属性，可以实现您对主题的自定义。配置文件<code>_config.yml</code>位于主题根目录下。本次更新对配置文件进行了较大调整，如您之前就使用了 Jacman，也需要您根据以下指南进行相应的修改。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div></pre></td><td class="code"><pre><div class="line"><span class="comment">##### 菜单</span></div><div class="line">menu:</div><div class="line">  主页: /</div><div class="line">  归档: /archives</div><div class="line">  关于: /about</div><div class="line"></div><div class="line"><span class="comment">#### 控件</span></div><div class="line">widgets: </div><div class="line">- category</div><div class="line">- tag</div><div class="line">- links</div><div class="line">- rss</div><div class="line"></div><div class="line"><span class="comment">#### RSS </span></div><div class="line">rss: /atom.xml </div><div class="line"></div><div class="line"><span class="comment">#### 图片相关</span></div><div class="line">imglogo:</div><div class="line">  enable: <span class="literal">true</span>               <span class="comment">## 是否显示网站 logo</span></div><div class="line">  src: img/logo.png        </div><div class="line">favicon: img/favicon.ico     <span class="comment">## 网站图标    </span></div><div class="line">apple_icon: img/jacman.jpg   <span class="comment">## 苹果设备上的图标，背景不要透明</span></div><div class="line">author_img: img/author.jpg   <span class="comment">## 网站底部的博主头像</span></div><div class="line"></div><div class="line"><span class="comment">#### 首页相关</span></div><div class="line">index:</div><div class="line">  expand: <span class="literal">true</span>              <span class="comment">## 首页文章是否展开。默认为展开式，显示 Read More。</span></div><div class="line">  excerpt_link: Read More    </div><div class="line">  </div><div class="line"><span class="comment">#### 作者信息</span></div><div class="line">author:</div><div class="line">  intro_line1:  <span class="string">"Hello ,I'm Larry Page in Google."</span>    <span class="comment">## 网站底部的个人介绍</span></div><div class="line">  intro_line2:  <span class="string">"This is my blog,believe it or not."</span>  </div><div class="line">  weibo_verifier:  <span class="comment">## 微博秀的验证码</span></div><div class="line">  tsina:           <span class="comment">## 用于微博秀和微博分享</span></div><div class="line">  weibo:           <span class="comment">## 用于显示网站底部社交按钮，下同</span></div><div class="line">  douban:         </div><div class="line">  zhihu:  </div><div class="line">  email:     </div><div class="line">  twitter:   </div><div class="line">  github:     </div><div class="line">  facebook: </div><div class="line">  linkedin:   </div><div class="line">  google_plus:   </div><div class="line">  stackoverflow:  </div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">#### 目录</span></div><div class="line">toc:</div><div class="line">  article: <span class="literal">true</span>   <span class="comment">## 是否在文章中显示目录</span></div><div class="line">  aside: <span class="literal">true</span>     <span class="comment">## 是否在侧边栏显示目录</span></div><div class="line"></div><div class="line"><span class="comment">#### 友情链接</span></div><div class="line">links:</div><div class="line">  Jark's Blog: http://wuchong.me</div><div class="line">  Hexo: http://hexo.io</div><div class="line">  </div><div class="line"><span class="comment">#### 评论</span></div><div class="line">duoshuo_shortname: </div><div class="line">disqus_shortname:  </div><div class="line"></div><div class="line"><span class="comment">#### 分享按钮</span></div><div class="line">jiathis:</div><div class="line">  enable: <span class="literal">false</span>   <span class="comment">## 默认使用主题内建分享</span></div><div class="line">  id:    </div><div class="line">  tsina: </div><div class="line">  </div><div class="line"><span class="comment">#### 网站统计</span></div><div class="line">google_analytics:</div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  id:            <span class="comment">## google analytics ID.</span></div><div class="line">  site:          <span class="comment">## 网站地址.</span></div><div class="line">baidu_tongji:</div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  sitecode:      <span class="comment">## 百度统计站点特征码</span></div><div class="line">cnzz_tongji:</div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  siteid:        <span class="comment">## CNZZ统计站点ID</span></div><div class="line"></div><div class="line"><span class="comment">#### 杂项</span></div><div class="line">ShowCustomFont: <span class="literal">true</span>  </div><div class="line">fancybox: <span class="literal">true</span>        </div><div class="line">totop: <span class="literal">true</span>           </div><div class="line"></div><div class="line"><span class="comment">#### 自定义搜索</span></div><div class="line">google_cse: </div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  cx:  </div><div class="line">baidu_search:    </div><div class="line">  enable: <span class="literal">false</span></div><div class="line">  id:   </div><div class="line">  site: http://zhannei.baidu.com/cse/search</div></pre></td></tr></table></figure>
+
+<h3 id="属性功能">属性功能</h3>
+<ul>
+<li><strong>菜单 menu</strong><br>默认没有启用 <code>/tags</code> 和 <code>/categories</code>页面，如果需要启用请在博客目录下的<code>source</code>文件夹中分别建立<code>tags</code> 和 <code>categories</code>文件夹每个文件夹中分别包含一个<code>index.md</code>文件。内容为：</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">layout: tags (或categories)</div><div class="line"><span class="header">title: tags (或categories)</span></div><div class="line">---</div></pre></td></tr></table></figure>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为主题中已经内置了这两个页面的模板，所以他们会被正确的解析出来。</p>
+<ul>
+<li><p><strong>控件 widgets</strong><br>提供了7种小工具。包括标签、标签云、分类、归档、RSS、友情链接、微博秀。</p>
+<p><strong>友情链接</strong>：友情链接的网址添加可以在<code>links</code>属性下添加。</p>
+<p><strong>微博秀</strong>：需要注意的是，如果要启用微博秀，您必须填上<code>author</code>属性下<code>tsina</code>和<code>weibo_verifier</code>的值，前者是您微博ID，后者是您微博秀的验证码，访问 <a href="http://app.weibo.com/tool/weiboshow" target="_blank" rel="external">http://app.weibo.com/tool/weiboshow</a> 在如下图位置，可以获得您的 verifier，如：我的是<code>b3593ceb</code>。<br><img src="http://ww1.sinaimg.cn/large/81b78497jw1emegd6b0ytj209204pweu.jpg" alt=""></p>
+</li>
+<li><p><strong>图片相关 Image</strong><br>本主题可以设置网站相关图片，例如网站图标（<code>favicon</code>）、网站logo（<code>imglogo</code>）、作者头像（<code>author_img</code>）。建议启用网站logo，格式建议为<code>.svg</code>或<code>.png</code>格式。同时建议提供配套的 favicon 以及在苹果设备上的图标<code>apple_icon</code>（背景不要透明）。</p>
+</li>
+<li><p><strong>首页显示模式 Index</strong><br>目前首页的显示模式支持两种，一种是原先的卡片式（前往 <a href="http://wuchong.me/jacman" target="_blank" rel="external">Demo</a> 预览），另一种是类似官方主题的文章展开式（<a href="http://wuchong.me" target="_blank" rel="external">本站</a>即采用的这种）。两者各有优劣，前者首页加载速度更快，后者文章内容更能吸引读者。主题默认采用后一种展开式，如需开启第一种卡片式，请设置<code>index</code>属性下的<code>expand: false</code>。</p>
+<p>卡片式的文章摘要是截取文章内容的前140个字，也可以自己总结<code>description</code>并将其放在开头的<code>front-matter</code>中。展开式的文章摘要就是使用<code>&lt;!-- more --&gt;</code>截取了。</p>
+</li>
+<li><p><strong>作者信息 author</strong><br>作者信息，建议尽量填写完整。其中<code>tsina</code>是你的新浪微博ID，不同于用户名或微博主页地址。启用这个属性后，其他用户在微博上分享你文章的同时会自动@你。同时它和<code>weibo_verifier</code>一起作用生成微博秀。<code>intro_line1</code>和<code>intro_line2</code>是网站底部的个人介绍。<code>weibo</code>、<code>twitter</code>、<code>facebook</code>等是用来显示网站右下角的社交按钮的，如下图所示。<br><img src="http://ww4.sinaimg.cn/large/81b78497jw1emgscr3575j2078050jrc.jpg" alt=""></p>
+</li>
+<li><p><strong>目录 toc</strong><br>是否启用在文章中或侧边栏中的目录功能。二者可以都为<code>true</code>或都为<code>false</code>。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的<code>front-matter</code>中加上一行<code>toc: false</code>。如果希望在某一篇文章中关闭目录自动编号功能你可以在文章文件开头的<code>front-matter</code>中加上一行<code>list_number: false</code>。另外 hexo 2.5.2 开始支持中文目录，想获得更好的体验请升级你的 Hexo 版本。</p>
+</li>
+<li><p><strong>评论 comments</strong><br>填写<code>duoshuo_shortname</code><a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>的用户名，启用多说评论系统。在大陆地区更好用的评论系统。</p>
+<p>填写<code>disqus_shortname</code><a href="http://disqus.com/" target="_blank" rel="external">disqus</a> 的用户名，启用 disqus 评论系统。国际上更广泛使用的评论系统。设置博客根目录下的<code>_config.yml</code>文件中的<code>disqus_shortname</code>同样也能开启该功能。</p>
+</li>
+<li><p><strong>加网分享 jiathis</strong><br><a href="http://www.jiathis.com/" target="_blank" rel="external">加网</a>分享系统。默认关闭，因为主题已经内置了原生的分享功能。</p>
+</li>
+<li><p><strong>网站统计 Analytics</strong><br><code>google_analytics</code>：Google Analytics追踪代码。请注意：Google Analytics已经升级到了Universal Analytics。请先前往后台升级你的Google Analytics版本后再启用追踪代码，更多信息请<a href="https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN" target="_blank" rel="external">点击这里</a>了解。</p>
+<p><code>baidu_tongji</code>：百度统计功能。需要填写站点特征码<code>sitecode</code>，在<a href="http://tongji.baidu.com/web/welcome/login" target="_blank" rel="external">官网</a>注册并配置站点后，获取特征码。特征码可以在「网站中心」-&gt; 「代码获取」中查看，如下图所示的<code>e6d1f421bbc9962127a50488f9ed37d1</code>，注意去掉前面的<code>3F</code>。<br><img src="http://ww4.sinaimg.cn/large/81b78497jw1emf4v6qf91j20kf07sq8v.jpg" alt=""></p>
+<p><code>cnzz_tongji</code>：站长统计功能。需要填写站点ID<code>siteid</code>，同理在<a href="http://www.cnzz.com" target="_blank" rel="external">站长官网</a>注册并配置站点后获得。</p>
+</li>
+<li><p><strong>数学公式 mathjax</strong><br>主题支持写 LaTex 数学公式。只需要在文章文件开头的<code>front-matter</code>中，加上一行<code>mathjax: true</code>，即可在文中写 LaTex 公式。</p>
+</li>
+<li><p><strong>图片浏览 fancybox</strong><br>默认关闭，如果你使用 Hexo 经常发表 Gallery 类型的文章，那么请设置为<code>true</code>。</p>
+</li>
+<li><p><strong>返回顶部 totop</strong><br>右下角<code>返回顶部</code>按钮，默认开启。</p>
+</li>
+<li><p><strong>自定义字体 ShowCustomFont</strong><br>是否启用自定义字体，默认开启，主要用于显示网站底部的字体。如果你有一定前端基础可以修改 font.styl 替换为你喜欢的字体。</p>
+</li>
+<li><p><strong>自定义搜索 Search</strong><br><code>baidu_search</code>：如果开启百度站内搜索需要登录 <a href="http://zn.baidu.com/" target="_blank" rel="external">百度站内搜索</a>，配置好你的站点，并开启站内搜索获取搜索ID，另外<code>site</code>属性可以填默认值，也可以填自己做了CNAME的二级域名，更详细的可以阅读<a href="http://gengbiao.me/hexo/hexo%E6%B7%BB%E5%8A%A0%E7%99%BE%E5%BA%A6%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2/" target="_blank" rel="external">这篇博客</a>了解。</p>
+<p><code>google_cse</code>：如果开启谷歌自定义搜索需要先登录 <a href="https://www.google.com/cse/" target="_blank" rel="external">Google CSE</a>，配置好你的站点，并获得此自定义搜索的ID。此外你需要在博客目录下的<code>source</code>文件夹中建立<code>search</code>文件夹并包含一个<code>index.md</code>文件。内容为：</p>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">layout: search</div><div class="line"><span class="header">title: search</span></div><div class="line">---</div></pre></td></tr></table></figure>
+
+
+
+
+
+
+<h2 id="常见问题">常见问题</h2>
+<ul>
+<li><p><strong>Q：图片默认都是居左的，我怎么设置能让图片居中呢？</strong></p>
+<blockquote>
+<p>使用 <code>&lt;img src=&quot;&quot; style=&quot;display:block;margin:auto&quot;/&gt;</code>的HTML标签。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：如何建立一篇图片类文章（Gallery Post）？</strong></p>
+<blockquote>
+<p>使用<code>hexo new photo &quot;your titile&quot;</code>建立图片类文章，或者直接新建一个 Markdown 文件，将其<code>front-matter</code>修改为如下，即可看到主题为图片类文章提供的样式，<a href="http://wuchong.me/jacman/gallery" target="_blank" rel="external">Demo</a>。</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="bullet">---</span></div><div class="line">layout: photo</div><div class="line">title: Gallery Post</div><div class="line">photos:</div><div class="line"><span class="bullet">- </span>http://i.minus.com/ibobbTlfxZgITW.jpg</div><div class="line"><span class="header">- http://i.minus.com/iedpg90Y0exFS.jpg</span></div><div class="line">---</div></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>Q：我在配置文件中给某一项设置了值，但为什么总是看不到效果啊？</strong></p>
+<blockquote>
+<p><code>_config.yml</code>文件中的每个属性值前面必须留一个空格，建议在 Sublime/Notepad++ 中开启显示所有空格模式。另每篇文章的 <code>front-matter</code> 也要注意这个问题。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：如何建立自我介绍页面（About 页面）？</strong></p>
+<blockquote>
+<p>首先在主目录找到<code>_config.yml</code>，找到url添加<code>about_dir: about</code>到这个板块。然后在<code>/source</code>里面建立about文件夹。在about文件夹里建立index.md。编辑index.md就和发布其他的文章一样，格式都一样。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：怎么提意见和建议？</strong></p>
+<blockquote>
+<p>主题还在不断完善中，欢迎 <a href="https://github.com/wuchong/jacman/issues" target="_blank" rel="external">open issue</a> 来提建议，参与讨论。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：楼主我不喜欢你的配色，怎么换主题的颜色呢？</strong></p>
+<blockquote>
+<p>包括颜色在内的很多变量都在<code>jacman/source/css/_base/variable.styl</code>文件中，可以修改成你喜欢的。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：英语更能突显我的逼格，怎么换成英语？</strong></p>
+<blockquote>
+<p>配置你的博客根目录下的<code>_config.yml</code>，去掉<code>language: zh-CN</code>。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：为什么我修改了配置文件/发表了博文，解析出来的却是乱码呢？ </strong></p>
+<blockquote>
+<p>请将你的配置文件/markdown文件保存成 <code>UTF-8</code> 格式。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：为什么开启了微博秀后，显示是空白的，没有内容展示？ </strong></p>
+<blockquote>
+<p>每次修改参数都会这样，需要多刷新几次或者上传到服务器上就好了。</p>
+</blockquote>
+</li>
+<li><p><strong>Q：博主 Jacman Demo 站点中文章的 md 源文件在哪能看到呢？ </strong></p>
+<blockquote>
+<p>我将 Demo 站点所有源文件放在了 Jacman 的 <a href="https://github.com/wuchong/jacman/tree/site" target="_blank" rel="external">site</a> 分支下。</p>
+</blockquote>
+</li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/jacman/categories/Hexo/">Hexo</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/jacman/tags/Hexo/">Hexo</a><a href="/jacman/tags/Jacman/">Jacman</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://wuchong.me/jacman/how-to-use-jacman/" data-title="如何使用 Jacman 主题 | Jacman Theme" data-tsina="2176287895" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/jacman/table/"  title="Table">
+ <strong>下一篇：</strong><br/> 
+ <span>Table
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="how-to-use-jacman/" data-title="如何使用 Jacman 主题" data-url="http://wuchong.me/jacman/how-to-use-jacman/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题介绍"><span class="toc-number">1.</span> <span class="toc-text">主题介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装指南"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置指南"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性功能"><span class="toc-number">3.1.</span> <span class="toc-text">属性功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见问题"><span class="toc-number">4.</span> <span class="toc-text">常见问题</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/jacman/categories/Hello/" title="Hello">Hello<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/categories/Photo/" title="Photo">Photo<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/categories/Table/" title="Table">Table<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/categories/Web/" title="Web">Web<sup>2</sup></a></li>
+		
+			<li><a href="/jacman/categories/foo/bar/" title="bar">bar<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/categories/foo/bar/baz/" title="baz">baz<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/categories/foo/" title="foo">foo<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/jacman/tags/consectetur/" title="consectetur">consectetur<sup>3</sup></a></li>
+		
+			<li><a href="/jacman/tags/test/" title="test">test<sup>2</sup></a></li>
+		
+			<li><a href="/jacman/tags/Jacman/" title="Jacman">Jacman<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/文章/" title="文章">文章<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/table/" title="table">table<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/amet/" title="amet">amet<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/baz/" title="baz">baz<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/bar/" title="bar">bar<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/foo/" title="foo">foo<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+			<li><a href="/jacman/tags/dolor/" title="dolor">dolor<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            <a href="https://coderq.com" target="_blank" title="码农圈">码农圈</a>
+          </li>
+        
+          <li>
+            <a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">新浪微博</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=2176287895&verifier=b3593ceb&dpc=1"></iframe>
+</div>
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Larry Page in Google. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/wuchong1014" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/wuchong" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/3222790" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		<a href="https://twitter.com/jarkwu" target="_blank" class="icon-twitter" title="twitter"></a>
+		
+		
+		<a href="https://www.facebook.com/imjark" target="_blank" class="icon-facebook" title="facebook"></a>
+		
+		
+		<a href="https://www.linkedin.com/in/wuchong1014" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/wuchong1014" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		<a href="https://www.zhihu.com/people/jark" target="_blank" class="icon-zhihu" title="知乎"></a>
+		
+		
+		<a href="https://plus.google.com/111190881341800841449?rel=author" target="_blank" class="icon-google_plus" title="Google+"></a>
+		
+		
+		<a href="mailto:imjark@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2014 
+		
+		<a href="http://wuchong.me/jacman/about" target="_blank" title="WuChong">WuChong</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/jacman/js/jquery-2.0.3.min.js"></script>
+<script src="/jacman/js/jquery.imagesloaded.min.js"></script>
+<script src="/jacman/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"wuchong"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/jacman/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/jacman/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-46321946-2', 'wuchong.me');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/jacman/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+  </body>
+</html>
