@@ -1,5 +1,5 @@
 <div id="main" class="<%= item.layout %>" itemscope itemprop="blogPost">
-  <% if (item.photos && item.photos.length){ %>
+  <% if (page.layout=='photo' && item.photos && item.photos.length){ %>
     <%- partial('gallery') %>
   <% } %>
 	<article itemprop="articleBody"> 

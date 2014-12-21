@@ -1,6 +1,6 @@
 <% if (theme.index.expand == true) { %> 
-    <% if (item.photos && item.photos.length){ %>
-    <%- partial('post/gallery') %>
+    <% if (page.layout=='photo' && item.photos && item.photos.length){ %>
+      <%- partial('post/gallery') %>
     <% } %>
     <article class="post-expand <%= item.layout %>" itemprop="articleBody"> 
         <%- partial('post/header') %>
