@@ -3,7 +3,11 @@
     <ul>
         <% for (var i in theme.links){ %>
           <li>
-            <a href="<%- theme.links[i] %>" target="_blank" title="<%= i %>"><%= i %></a>
+            <% if(theme.links[i].indexOf(",") > 0) { %>
+            	<a href="<%- theme.links[i].split(",")[0] %>" target="_blank" title="<%- theme.links[i].split(",")[1] %>"><%= i %></a>
+            <% }else{ %>
+            	<a href="<%- theme.links[i] %>" target="_blank" title="<%= i %>"><%= i %></a>
+            <% } %>
           </li>
         <% } %>
     </ul>
