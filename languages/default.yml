@@ -8,6 +8,7 @@ comment: Comments
 contents: Contents
 archive_a: Archives
 archive_b: "Archives: %s"
+archive_date: "MMM YYYY"
 page: Page %d
 recent_posts: Recent Posts
 menu: Menu

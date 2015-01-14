@@ -8,6 +8,7 @@ comment: 文章評論
 contents: 文章目錄
 archive_a: 歸檔
 archive_b: 歸檔：%s
+archive_date: "YYYY 年 MM 月"
 page: 第 %d 頁
 recent_posts: 近期文章
 menu: 菜單
