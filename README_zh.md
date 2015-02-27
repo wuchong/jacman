@@ -33,7 +33,7 @@ git pull origin master
 - **控件 widget**  
  侧边栏的控件。包括：分类、标签、RSS、归档、标签云、友情链接、微博秀。
 - **图片相关 Image**  
- 设置网站图标、网站logo、作者头像等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等
+ 设置网站图标、网站logo、作者头像、博客顶部大图等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等
 - **首页模式 index**  
  主题提供了两种首页展示模式，你可以访问 [主题演示](http://wuchong.me/jacman) 和 [Jark's Blog](http://wuchong.me) 来了解其不同。
 - **作者 author**  
@@ -54,6 +54,8 @@ git pull origin master
  RSS 订阅链接。
 - **fancybox**  
  图片查看的 [Fancybox](http://fancyapps.com/fancybox/) 工具。
+- **自定义主题颜色**
+ 在`_config.yaml`中就可以修改主题的颜色，而不用去找那些奇怪的 stylus 文件。
 
 你可以通过[配置指南](https://github.com/wuchong/jacman/wiki/配置指南)了解更多使用细节。
 

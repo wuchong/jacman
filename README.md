@@ -33,7 +33,7 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
 - **widget**  
  Widgets displaying in sidebar.The category,tag,rss,archive,tagcloud,links,weibo are supported.
 - **Image**  
- Images about favicon, site logo, author image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
+ Images about favicon, site logo, author image, banner image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
 - **index**  
  Two different home page display modes.You can visit [Demo](http://wuchong.me/jacman) & [Jark's Blog](http://wuchong.me) to check the difference.
 - **author**  
@@ -54,6 +54,8 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
  RSS subscription link (change if using Feedburner).
 - **fancybox**  
  Enable [Fancybox](http://fancyapps.com/fancybox/)
+- **custom theme color**
+ Mondify theme color in `_config.yaml` instead of finding unfamiliar stylus files.
 
 You can learn how to use them from [Configuration](https://github.com/wuchong/jacman/wiki/配置指南).
 
