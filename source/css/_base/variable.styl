@@ -1,11 +1,15 @@
 //Color
-color-background = #ddd	//#eee
-color-content = #413F3F
+theme = convert(hexo-config("theme_color.theme"))
+if(theme is a 'rgba')
+  color-theme = theme
+else
+  color-theme = #2ca6cb
+color-background = #ddd
 color-font = #817C7C
+color-content = #413F3F
 color-white = #ffffff
 color-blue = #2ca6cb	//#0085ff
 color-orange = #ea6753
-color-theme = #2ca6cb	//#1FA9D4    //#ea6753
 color-font-nav =#E9CD4C
 color-section = #fafafa	//#fff
 color-footer = #1f1f1f
