@@ -2,7 +2,10 @@ body
   >header
     width 100%
     box-shadow 2px 4px 5px hsla(0,1%,1%,.2)
-    background color-theme
+    if(banner_img)
+      background url(banner-img) center color-theme
+    else
+      background color-theme
     color color-white
     padding 1em 0 0.8em 
     @media tablet
