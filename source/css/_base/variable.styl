@@ -1,7 +1,7 @@
 //Color
-theme = convert(hexo-config("theme_color.theme"))
-if(theme is a 'rgba')
-  color-theme = theme
+_color-theme = convert(hexo-config("theme_color.theme"))
+if(_color-theme is a 'rgba')
+  color-theme = _color-theme
 else
   color-theme = #2ca6cb
 color-background = #ddd
@@ -53,20 +53,11 @@ font-icon-diao-version = "0.0.8"
 ShowCustomFont = hexo-config("ShowCustomFont")
 font-size = 100%
 line-height = 1.5
-
 //image
-dataURI = hexo-config("dataURI")
-if dataURI == true
-    author-img-data = unquote(hexo-config("author_img_data"))
 author-img = hexo-config("author_img")
-ShowGallery = hexo-config("ShowGallery")
-root = hexo-config("root")
 
 //comment
 duoshuo = hexo-config("duoshuo_shortname")
 
-//highlight
-highlight = hexo-config("highlight.enable")
-
 //banner image
-banner-img = "/"+hexo-config("banner_img")
+banner-img = hexo-config("banner_img")
