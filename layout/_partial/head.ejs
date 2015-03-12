@@ -22,16 +22,9 @@
     <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <% if (config.author){ %>
-    <meta name="author" content="<%= config.author %>"><% } %>
-    <% if (page.description){ %>
-    <meta name="description" itemprop="description" content="<%= page.description %>">
-    <% } else if (config.description&&(!is_post())){ %>
-    <meta name="description" content="<%= config.description %>">
-    <% } else if (page.excerpt){ %>
-    <meta name="description" content="<%= strip_html(page.excerpt).replace(/^\s*/, '').replace(/\s*$/, '') %>">
-    <% } else if (page.content){ %>
-    <meta name="description" content="<%= strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150) %>">
+    <meta name="author" content="<%= config.author %>">
     <% } %>
+
     <% if (page.keywords){ %><meta name="keywords" content="<%= page.keywords %>"><% } %>
     <%- open_graph({twitter_id: theme.author.twitter, google_plus: theme.author.google_plus}) %>
 
