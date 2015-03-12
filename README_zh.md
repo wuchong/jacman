@@ -4,6 +4,8 @@
 
 Jacman 是为 [Hexo](http://hexo.io) 设计的一款清新且具有响应式的主题，拥有更丰富的特性并支持了很多的国内服务。Jacman 始于 [Pacman](https://github.com/A-limon/pacman) 修改而来。
 
+**Jacman 现已支持 Hexo 3.0 !**
+
 [主题演示](http://wuchong.me/jacman) | [Jark's Blog](http://wuchong.me)
 
 [如何使用 Jacman 主题](http://wuchong.me/blog/2014/11/20/how-to-use-jacman/)
