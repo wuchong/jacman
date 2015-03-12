@@ -1,0 +1,3 @@
+layout: search
+title: search
+---
