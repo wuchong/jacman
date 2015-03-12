@@ -26,16 +26,8 @@ if (page.archive){
 </div>
 <div id="main" class="archive-part clearfix">
   <div id="archive-page">
-<% page.posts.each(function(item){ %>
+<% site.posts.each(function(item){ %>
   <%- partial('_partial/article_row', {item: item, index: true}) %>
 <% }); %>
-<% if (page.total > 1){ %>
-  <nav id="page-nav" class="clearfix archive-nav">
-    <%- paginator({
-      prev_text: '<span></span>Prev',
-      next_text: 'Next<span></span>'
-    }) %>
-  </nav>
-<% } %>
   </div>
 </div>
