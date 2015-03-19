@@ -111,3 +111,6 @@ baidu_search:     ## http://zn.baidu.com/
   id:   ## e.g. "783281470518440642"  for your baidu search id
   site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
   
+tinysou_search:     ## http://tinysou.com/
+  enable: false
+  id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id
