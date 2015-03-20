@@ -46,9 +46,6 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
-  <% if (is_post()) { %>
-    c.click();
-  <% } %>  
 });
 </script>
 <% if (is_post()) { %>
@@ -81,6 +78,9 @@ $(document).ready(function(){
       ta.css("top",Math.max(140,320-$(this).scrollTop()));
     });
   };
+  <% if (is_post() && theme.close_aside) { %>
+    c.click();
+  <% } %>  
 });
 </script>
 <% } %>
