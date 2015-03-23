@@ -1,5 +1,15 @@
 @import 'nib'
 global-reset()
+
+if highlight
+  @import '_base/code'
+  
+if fancybox
+  @import '_partial/gallery'
+  
+if totop
+  @import '_partial/totop'
+  
 @import '_base/variable'
 @import '_base/font'
 @import '_base/public'
@@ -9,11 +19,3 @@ global-reset()
 @import '_partial/helper'
 @import '_partial/aside'
 @import '_partial/footer'
-if highlight
-  @import '_base/code'
-
-if fancybox
-  @import '_partial/gallery'
-
-if totop
-  @import '_partial/totop'
