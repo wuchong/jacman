@@ -41,6 +41,7 @@ index:
   excerpt_link: Read More  
 
 close_aside: false  #close sidebar in post page if true
+mathjax: false      #enable mathjax if true
 
 #### Author information
 author:
