@@ -19,20 +19,6 @@ $(document).ready(function(){
       a = $('#asidepart'),
       c = $('.closeaside'),
       o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-      <% if( is_post()&&(page.toc !== false) && theme.toc.aside){ %>
-      $('#toc.toc-aside').css('display', 'none');
-      <% } %>  
-    }
-  });
   c.click(function(){
     a.addClass('fadeOut').css('display', 'none');
     o.css('display', 'block').addClass('fadeIn');
@@ -45,6 +31,25 @@ $(document).ready(function(){
   });
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  <% if (is_post() && theme.close_aside) { %>
+        getSize();
+        if (myWidth >= 1024) {
+          c.click();
+        }
+  <% } %>
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      <% if( is_post()&&(page.toc !== false) && theme.toc.aside){ %>
+      $('#toc.toc-aside').css('display', 'none');
+      <% } %>  
+    }
   });
 });
 </script>
@@ -72,9 +77,6 @@ $(document).ready(function(){
   $(window).scroll(function(){
     ta.css("top",Math.max(140,320-$(this).scrollTop()));
   });
-  <% if (is_post() && theme.close_aside) { %>
-    c.click();
-  <% } %>  
 });
 </script>
 <% } %>
