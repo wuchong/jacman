@@ -43,11 +43,27 @@
 		<a href="mailto:<%=theme.author.email %>" target="_blank" class="icon-email" title="Email Me"></a>
 		<% } %>
 	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © <%= new Date().getFullYear() %> 
+			<%  Array.prototype.S=String.fromCharCode(2);
+			  Array.prototype.in_array=function(e){
+    			var r=new RegExp(this.S+e+this.S);
+    			return (r.test(this.S+this.join(this.S)+this.S));
+				};
+				var cc = new Array('by','by-nc','by-nc-nd','by-nc-sa','by-nd','by-sa','zero'); %>
+		<% if (cc.in_array(theme.creative_commons) ) { %>
+				<div class="cc-license">
+          <a href="http://creativecommons.org/licenses/<%= theme.creative_commons %>/4.0" class="cc-opacity" target="_blank">
+            <img src="img/cc-<%= theme.creative_commons %>.svg" alt="Creative Commons" />
+          </a>
+        </div>
+    <% } %>
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © <%= new Date().getFullYear() %> 
 		<% if (config.author) { %>
 		<a href="<%= config.url %>/about" target="_blank" title="<%= config.author %>"><%= config.author %></a>
 		<% } else {%>
 		<a href="<%= config.url %>" title="<%= config.title %>"><%= config.title %></a>
 		<% } %>
+		
 		</p>
 </div>

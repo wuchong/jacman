@@ -43,6 +43,10 @@ index:
 close_aside: false  #close sidebar in post page if true
 mathjax: false      #enable mathjax if true
 
+### Creative Commons License Support, see http://creativecommons.org/ 
+### you can choose: by , by-nc , by-nc-nd , by-nc-sa , by-nd , by-sa , zero
+creative_commons: none
+
 #### Author information
 author:
   intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
