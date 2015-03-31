@@ -151,6 +151,8 @@ footer.article-footer
       font-family font-icon-family
       font-smoothing()
       content "\f075"
+  @media phonemax
+    float left
 
 .comments-count-link
   padding 0.5em
@@ -169,7 +171,8 @@ footer.article-footer
   float left
   /**width 100%**/
   @media phonemax
-    width 100%
+    margin-right 1em !important
+    //width 100%
 
 .article-tags
   color lighten(color-gray,20%) 
