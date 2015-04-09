@@ -80,8 +80,8 @@ links:
 
 
 #### Comment
-duoshuo_shortname: ## e.g. wuchong   your duoshuo short name.
-disqus_shortname:  ## e.g. wuchong   your disqus short name.
+duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
+disqus_shortname:     ## e.g. wuchong   your disqus short name.
 
 #### Share button
 jiathis:
