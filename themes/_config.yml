@@ -1,8 +1,8 @@
 ##### Menu
 menu:
-  Home: /
-  Archives: /archives
-  About: /about
+  Home: /jacman
+  Archives: /jacman/archives
+  About: /jacman/about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -15,7 +15,7 @@ widgets:
 - category
 - tag
 - links
-- douban
+- weibo
 - rss
 ## provide seven widgets:category,tag,rss,archive,tagcloud,links,weibo,douban
 
@@ -39,24 +39,27 @@ theme_color:
 index:
   expand: true           ## default is unexpanding,so you can only see the short description of each post.
   excerpt_link: Read More  
-  
+close_aside: false  #close sidebar in post 
+
 #### Author information
 author:
   intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
   intro_line2:  "This is my blog,believe it or not."  ## the 2nd line
-  weibo:      ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
-  weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
-  tsina:      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  douban:     ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu:      ## e.g. jark  for http://www.zhihu.com/people/jark
-  email:      ## e.g. imjark@gmail.com
-  twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
-  github:     ## e.g. wuchong for https://github.com/wuchong
-  facebook:   ## e.g. imjark for https://facebook.com/imjark
-  linkedin:   ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
-  google_plus:    ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
-  stackoverflow:  ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
+  weibo: wuchong1014     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
+  weibo_verifier: b3593ceb ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
+  tsina: 2176287895     ## e.g. 2176287895  Your weibo ID,It will be used in share button.
+  douban: wuchong1014    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  zhihu: jark     ## e.g. jark  for http://www.zhihu.com/people/jark
+  email: imjark@gmail.com     ## e.g. imjark@gmail.com
+  twitter: jarkwu   ## e.g. jarkwu for https://twitter.com/jarkwu
+  github: wuchong     ## e.g. wuchong for https://github.com/wuchong
+  facebook: imjark  ## e.g. imjark for https://facebook.com/imjark
+  linkedin: wuchong1014  ## e.g. wuchong1014 for https://www.linkedin.com/in/wuchong1014
+  google_plus: "111190881341800841449"   ## e.g. "111190881341800841449" for https://plus.google.com/u/0/111190881341800841449, the "" is needed!
+  stackoverflow: 3222790 ## e.g. 3222790 for http://stackoverflow.com/users/3222790/jark
 ## if you set them, the corresponding  share button will show on the footer
+
+
 
 #### Toc
 toc:
@@ -73,7 +76,7 @@ links:
   
 
 #### Comment
-duoshuo_shortname: ## e.g. wuchong   your duoshuo short name.
+duoshuo_shortname: wuchong## e.g. wuchong   your duoshuo short name.
 disqus_shortname:  ## e.g. wuchong   your disqus short name.
 
 #### Share button
@@ -104,8 +107,8 @@ totop: true           ## if you want to scroll to top in every post set the valu
 
 #### Custom Search
 google_cse: 
-  enable: false
-  cx:   ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
+  enable: true
+  cx: 018294693190868310296:abnhpuysycw  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
 ## https://www.google.com/cse/ 
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
 ## set the 'front-matter' as
@@ -116,4 +119,6 @@ baidu_search:     ## http://zn.baidu.com/
   enable: false
   id:   ## e.g. "783281470518440642"  for your baidu search id
   site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
-  
+tinysou_search:     ## http://tinysou.com/
+  enable: false
+  id:  ## e.g. "4ac092ad8d749fdc6293" for your tiny search id

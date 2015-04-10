@@ -19,7 +19,7 @@ description: Jacman 是一款扁平化，有着响应式设计的 Hexo 主题。
 ```
 $ git clone https://github.com/wuchong/jacman.git themes/jacman
 ```
-Jacman 需要安装 Hexo 2.7 及以上版本，支持 Hexo 3.0 。请先升级您的 Hexo 程序，再启用此主题。
+Jacman 需要安装 Hexo 2.7 及以上版本，请先升级您的 Hexo 程序，再启用此主题。
 
 ###启用
 
@@ -72,12 +72,13 @@ banner_img: img/banner.jpg   ## 博客顶部的图片
 theme_color:
     theme: '#2ca6cb'    ##默认主题颜色为蓝色
 
+close_aside: false      ##是否在文章页面自动关闭侧边栏
 
 #### 首页相关
 index:
   expand: true              ## 首页文章是否展开。默认为展开式，显示 Read More。
   excerpt_link: Read More    
-  
+
 #### 作者信息
 author:
   intro_line1:  "Hello ,I'm Larry Page in Google."    ## 网站底部的个人介绍
@@ -140,7 +141,10 @@ google_cse:
 baidu_search:    
   enable: false
   id:   
-  site: http://zhannei.baidu.com/cse/search  
+  site: http://zhannei.baidu.com/cse/search 
+tinysou_search:     ## http://tinysou.com/
+  enable: false
+  id: "4ac092ad8d749fdc6293" 
 ```
 
 ###属性功能
@@ -163,6 +167,8 @@ title: tags (或categories)
  
  **微博秀**：需要注意的是，如果要启用微博秀，您必须填上`author`属性下`tsina`和`weibo_verifier`的值，前者是您微博ID，后者是您微博秀的验证码，访问 http://app.weibo.com/tool/weiboshow 在如下图位置，可以获得您的 verifier，如：我的是`b3593ceb`。
 ![](http://ww1.sinaimg.cn/large/81b78497jw1emegd6b0ytj209204pweu.jpg)
+
+ 如果要关闭侧边栏，将`close_aside`置为`true`，就会在博文页面自动关闭侧边栏。
 
 - **图片相关 Image**
 本主题可以设置网站相关图片，例如网站图标（`favicon`）、网站logo（`imglogo`）、作者头像（`author_img`）。建议启用网站logo，格式建议为`.svg`或`.png`格式。同时建议提供配套的 favicon 以及在苹果设备上的图标`apple_icon`（背景不要透明）。
@@ -216,6 +222,8 @@ title: tags (或categories)
  title: search
  ---
  ```
+
+ `tiny_search`: 如果要开启[微搜索](http://tinysou.com/)，需要先注册一个帐号，配置一个Engine，将Engine的Key填入配置文件中的`id`即可。
  
 - **主题颜色更改 Theme Color**
 

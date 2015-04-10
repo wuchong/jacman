@@ -49,6 +49,9 @@ archive: 1
 category: 1
 tag: 1
 
+archive_generator:
+  per_page: 0
+
 # Server 不修改
 ## Hexo uses Connect as a server
 ## You can customize the logger format as defined in
@@ -84,6 +87,12 @@ plugins:
 - hexo-generator-feed
 - hexo-generator-sitemap
 - hexo-git-backup
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
 
 backup:
     type: git
