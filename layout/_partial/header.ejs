@@ -1,3 +1,17 @@
+<%
+function root_for(path){
+	path = path || '/'
+	var root = config.root;
+	if (path.substring(0, root.length) !== root){
+    if (path.substring(0, 1) === '/'){
+      path = root.substring(0, root.length - 1) + path;
+    } else {
+      path = root + path;
+    }
+  }
+  return path;
+}
+%>
 <div>
 		<% if	(theme.imglogo.enable&&theme.imglogo.src){ %>
 			<div id="imglogo">
@@ -14,7 +28,7 @@
 				<ul>
 					<ul>
 					 <% for (var i in theme.menu){ %>
-						<li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+						<li><a href="<%- root_for(theme.menu[i]) %>"><%= i %></a></li>
 					<% } %>
 					<li>
  					<% if	(theme.google_cse.enable){ %>
