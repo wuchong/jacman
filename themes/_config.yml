@@ -1,8 +1,8 @@
 ##### Menu
 menu:
-  Home: /jacman
-  Archives: /jacman/archives
-  About: /jacman/about
+  Home: /
+  Archives: /archives
+  About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
@@ -39,7 +39,13 @@ theme_color:
 index:
   expand: true           ## default is unexpanding,so you can only see the short description of each post.
   excerpt_link: Read More  
-close_aside: false  #close sidebar in post 
+
+close_aside: false  #close sidebar in post page if true
+mathjax: false      #enable mathjax if true
+
+### Creative Commons License Support, see http://creativecommons.org/ 
+### you can choose: by , by-nc , by-nc-nd , by-nc-sa , by-nd , by-sa , zero
+creative_commons: by-nc-sa
 
 #### Author information
 author:
@@ -76,7 +82,7 @@ links:
   
 
 #### Comment
-duoshuo_shortname: wuchong## e.g. wuchong   your duoshuo short name.
+duoshuo_shortname: wuchong  ## e.g. wuchong   your duoshuo short name.
 disqus_shortname:  ## e.g. wuchong   your disqus short name.
 
 #### Share button
