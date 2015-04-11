@@ -12,7 +12,7 @@ language: zh-CN
 
 # URL #这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wuchong.me/jacman
+url: http://wuchong.me/
 root: /jacman/
 permalink: :year/:month/:day/:title/
 tag_dir: tags
