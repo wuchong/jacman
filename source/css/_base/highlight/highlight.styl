@@ -1,19 +1,9 @@
 // More theme here http//softwaremaniacs.org/media/soft/highlight/test.html
 // Just change those colors
 // https//github.com/chriskempson/tomorrow-theme
-highlight-background = #2d2d2d
-highlight-current-line = #393939
-highlight-line-numbers = #666
-highlight-selection = #515151
-highlight-foreground = #cccccc
-highlight-comment = #999999
-highlight-red = #f2777a
-highlight-orange = #f99157
-highlight-yellow = #ffcc66
-highlight-green = #99cc99
-highlight-aqua = #66cccc
-highlight-blue = #6699cc
-highlight-purple = #cc99cc
+
+@require "theme"
+
 highlight-font-size = 0.9em
 
 $code-block
@@ -40,8 +30,6 @@ $line-numbers
   pre
     font-family font-mono
     @extend $code-block
-    background color-quote
-    border 1px solid #ccc
     code
       color color-heading
       background none

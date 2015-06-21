@@ -35,6 +35,10 @@ banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 theme_color:
     theme: '#2ca6cb'    ##the defaut theme color is blue
 
+# 代码高亮主题
+# available: default | night
+highlight_theme: default
+
 #### index post is expanding or not 
 index:
   expand: true           ## default is unexpanding,so you can only see the short description of each post.
