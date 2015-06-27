@@ -92,53 +92,15 @@ footer.article-footer
     text-shadow 0 1px darken(color-top, 20%)
 
 //qrcode
-.qrcode
-  absolute-center(15em)
+.hoverqrcode
   background color-white
-  border 2px solid color-gray
-  border-radius 3px
+  border 3px solid #2ca6cb
+  border-radius 10px
   display inline-block
-  opacity 0
-  position fixed
-  text-align center
-  visibility hidden
-  z-index 10
-  transition opacity .5s
-  @media tablet
-    absolute-center(20em)
-    position fixed
-  span 
-    display block
-    width 80%
-    height 1.5em
-    font-size 80%
-    float left
-    &:before
-      content none
-  a
-    display block
-    width 16%
-    height 1.5em
-    float left
-  img
-    width 90%
-    height 90%
-
-.qrclose
-  &:before
-    font-family font-icon-family
-    font-smoothing()
-    content "\f057"
-    color color-gray
-  &:hover:before
-    color color-blue !important
+  position absolute
 
 .overlay
   display none !important
-
-.overlay:target+.qrcode
-  opacity 1
-  visibility visible
 
 //comments-count
 .comments-count
