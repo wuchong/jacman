@@ -95,6 +95,7 @@ You can learn how to use them from [Configuration](https://github.com/wuchong/ja
 - [Yangxiaolei's blog](http://yangxiaolei.me) - 让知识成为信仰，让优秀成为习惯
 - [CC's blog](http://ccloveyou.org) - CC
 - [TadGuo's pages](http://watermeion.github.io) - More is different.
+- [Mutse's blog](http://mutse.github.io) - Love Life, Love open source
 
 If you are using Jacman,you can add your site [here](https://github.com/wuchong/jacman/wiki/Sites) ! I'll push the available sites here.
 
