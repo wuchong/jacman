@@ -132,7 +132,7 @@ $(document).ready(function(){
 </script>
 <% } %>
 
-<% if (theme.duoshuo_shortname){ %>
+<% if (theme.duoshuo_shortname && page.comments){ %>
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"<%= theme.duoshuo_shortname %>"};
   (function() {
@@ -145,7 +145,7 @@ $(document).ready(function(){
   })();
 </script> 
 <% } %>
-<% if( (config.disqus_shortname || theme.disqus_shortname)) { %>
+<% if( (config.disqus_shortname || theme.disqus_shortname) && page.comments) { %>
 <script type="text/javascript">
 <% if(config.disqus_shortname){ %>
 var disqus_shortname = '<%= config.disqus_shortname %>';
