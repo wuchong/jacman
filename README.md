@@ -6,9 +6,9 @@ Jacman is a fresh looking and responsive theme for [Hexo](http://hexo.io) with m
 
 **Jacman support Hexo 3.0 now !**
 
-[Demo](http://wuchong.me/jacman)
+[Demo](http://jacman.wuchong.me)
 
-[如何使用 Jacman 主题](http://wuchong.me/jacman/2014/11/20/how-to-use-jacman/)
+[如何使用 Jacman 主题](http://jacman.wuchong.me/2014/11/20/how-to-use-jacman/)
 
 ##Installation
 ###Install
@@ -37,7 +37,7 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
 - **Image**  
  Images about favicon, site logo, author image, banner image. Support different image styles like `img-logo`,`img-topic`,`img-center` etc.
 - **index**  
- Two different home page display modes.You can visit [Demo](http://wuchong.me/jacman) & [Jark's Blog](http://wuchong.me) to check the difference.
+ Two different home page display modes.You can visit [Demo](http://jacman.wuchong.me) to check the difference.
 - **author**  
  Author imformation, used to show your social network links on the bottom right. Including github, stackoverflow, twitter, facebook, linkedin, google+, weibo, douban, zhihu, email.
 - **toc**  
@@ -64,7 +64,7 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
 You can learn how to use them from [Configuration](https://github.com/wuchong/jacman/wiki/配置指南).
 
 ##Sites
-- [Jacman Theme](http://wuchong.me/jacman) - The demo site of Jacman Theme
+- [Jacman Theme](http://jacman.wuchong.me) - The demo site of Jacman Theme
 - [Jark's Blog](http://wuchong.me) - The author's blog of Jacman
 - [阿杜个人博客](http://ralphadu.com) - 阿杜个人博客
 - [PhiloSky's Blog](http://philosky.ml/) - Personal blog

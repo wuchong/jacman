@@ -6,9 +6,9 @@ Jacman 是为 [Hexo](http://hexo.io) 设计的一款清新且具有响应式的�
 
 **Jacman 现已支持 Hexo 3.0 !**
 
-[主题演示](http://wuchong.me/jacman)
+[主题演示](http://jacman.wuchong.me)
 
-[如何使用 Jacman 主题](http://wuchong.me/jacman/2014/11/20/how-to-use-jacman/)
+[如何使用 Jacman 主题](http://jacman.wuchong.me/2014/11/20/how-to-use-jacman/)
 
 ##安装教程
 ###安装
@@ -37,7 +37,7 @@ git pull origin master
 - **图片相关 Image**  
  设置网站图标、网站logo、作者头像、博客顶部大图等。还提供了多种图片样式`img-logo`,`img-topic`,`img-center`等
 - **首页模式 index**  
- 主题提供了两种首页展示模式，你可以访问 [主题演示](http://wuchong.me/jacman) 和 [Jark's Blog](http://wuchong.me) 来了解其不同。
+ 主题提供了两种首页展示模式，你可以访问 [主题演示](http://jacman.wuchong.me) 来了解其不同。
 - **作者 author**  
  作者信息，主要用于展示网站右下角的社交网络链接。包括：微博、豆瓣、知乎、邮箱、GitHub、StackOverflow、Twitter、Facebook、Linkedin、Google+。
 - **目录 toc**  
@@ -64,7 +64,7 @@ git pull origin master
 你可以通过[配置指南](https://github.com/wuchong/jacman/wiki/配置指南)了解更多使用细节。
 
 ##网站列表
-- [Jacman Theme](http://wuchong.me/jacman) - The demo site of Jacman Theme
+- [Jacman Theme](http://jacman.wuchong.me) - The demo site of Jacman Theme
 - [Jark's Blog](http://wuchong.me) - The author's blog of Jacman
 - [阿杜个人博客](http://ralphadu.com) - 阿杜个人博客
 - [PhiloSky's Blog](http://philosky.ml/) - Personal blog
