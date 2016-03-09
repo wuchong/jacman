@@ -13,7 +13,7 @@ language: zh-CN
 # URL #这项暂不配置，绑定域名后，欲创建sitemap.xml需要配置该项
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://wuchong.me/
-root: /jacman/
+root: /
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
@@ -94,14 +94,10 @@ feed:
   limit: 20
 
 
-backup:
-    type: git
-    repository:
-       github: git@github.com:wuchong/jacman.git,site
 
 # Deployment 站点部署到github要配置
 ## Docs: http://zespia.tw/hexo/docs/deploy.html
 deploy:
-  type: git
-  repository: git@gitcafe.com:wuchong/jacman.git
-  branch: gitcafe-pages
+- type: git
+  repo: git@git.coding.net:jark/jacman.git
+  branch: coding-pages
