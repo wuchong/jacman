@@ -6,9 +6,9 @@ Jacman is a fresh looking and responsive theme for [Hexo](http://hexo.io) with m
 
 **Jacman support Hexo 3.0 now !**
 
-[Demo](http://wuchong.me/jacman) | [Jark's Blog](http://wuchong.me)
+[Demo](http://wuchong.me/jacman)
 
-[如何使用 Jacman 主题](http://wuchong.me/blog/2014/11/20/how-to-use-jacman/)
+[如何使用 Jacman 主题](http://wuchong.me/jacman/2014/11/20/how-to-use-jacman/)
 
 ##Installation
 ###Install

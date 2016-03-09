@@ -6,9 +6,9 @@ Jacman 是为 [Hexo](http://hexo.io) 设计的一款清新且具有响应式的�
 
 **Jacman 现已支持 Hexo 3.0 !**
 
-[主题演示](http://wuchong.me/jacman) | [Jark's Blog](http://wuchong.me)
+[主题演示](http://wuchong.me/jacman)
 
-[如何使用 Jacman 主题](http://wuchong.me/blog/2014/11/20/how-to-use-jacman/)
+[如何使用 Jacman 主题](http://wuchong.me/jacman/2014/11/20/how-to-use-jacman/)
 
 ##安装教程
 ###安装
