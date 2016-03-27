@@ -7,8 +7,8 @@
 	<% } %>
 	<% if(theme.author.intro_line1 || theme.author.intro_line2){ %>
 	<section class="info">
-		<p> <%= theme.author.intro_line1 %> <br/>
-			<%= theme.author.intro_line2 %></p>
+		<p> <%= theme.author.intro_line1 || "" %> <br/>
+			<%= theme.author.intro_line2 || "" %></p>
 	</section>
 	 <% } %>
 	<div class="social-font" class="clearfix">
