@@ -96,6 +96,7 @@ git pull origin master
 - [CC's blog](http://ccloveyou.org) - CC
 - [TadGuo's pages](http://watermeion.github.io) - More is different.
 - [Mutse's blog](http://mutse.github.io) - 爱生活，爱开源
+- [Salogs](http://salogs.com/) - 拥抱开源，分享经验!
 
 如果你正在使用 Jacman主题，欢迎将网址添加到[wiki的网站列表](https://github.com/wuchong/jacman/wiki/Sites)。我会不定期进行整理。
 
