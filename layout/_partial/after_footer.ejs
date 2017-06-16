@@ -168,7 +168,17 @@ var disqus_shortname = '<%= theme.disqus_shortname %>';
 }());
 </script>
 <% } %>
-
+<% if (theme.gentie_key && page.comments){ %>
+<script>
+  var cloudTieConfig = {
+    url: document.location.href,
+    sourceId: "",
+    productKey: "<%= theme.gentie_key %>",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+<% } %>
 
 
 <% if (page.layout=='tags'||page.layout=='categories'){ %>
