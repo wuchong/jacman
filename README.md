@@ -65,7 +65,6 @@ You can learn how to use them from [Configuration](https://github.com/wuchong/ja
 
 ## Sites
 - [Jacman Theme](http://jacman.wuchong.me) - The demo site of Jacman Theme
-- [Jark's Blog](http://wuchong.me) - The author's blog of Jacman
 - [阿杜个人博客](http://ralphadu.com) - 阿杜个人博客
 - [PhiloSky's Blog](http://philosky.ml/) - Personal blog
 - [hiluSdream](http://hiluluke.cn) - 梦想是无所谓无的，无所谓有的
