@@ -10,26 +10,26 @@ Jacman is a fresh looking and responsive theme for [Hexo](http://hexo.io) with m
 
 [如何使用 Jacman 主题](http://jacman.wuchong.me/2014/11/20/how-to-use-jacman/)
 
-##Installation
-###Install
+## Installation
+### Install
 ```
 $ git clone https://github.com/wuchong/jacman.git themes/jacman
 ```
 **Jacman requires Hexo 2.7 and above.** 
-###Enable
+### Enable
 Modify `theme` setting in blog folder` _config.yml` to `jacman`.
-###Update
+### Update
 ```
 cd themes/jacman
 git pull origin master
 ```
 **please backup your `_config.yml` file before update.** 
 
-##Configuration
+## Configuration
 
 Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.com/wuchong/jacman/wiki/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97).
 
-##Features
+## Features
 - **menu**  
  Main navigation menu.
 - **widget**  
@@ -43,7 +43,7 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
 - **toc**  
  Show Table Of Contents in article & aside.
 - **comments**  
- [duoshuo](http://duoshuo.com/) & [disqus](https://disqus.com/) are supported.
+ [duoshuo](http://duoshuo.com/) & [disqus](https://disqus.com/) & [网易云跟帖](https://gentie.163.com/index.html) are supported.
 - **jiathis**  
  Build-in share tool or [JiaThis](http://www.jiathis.com/) share buttons at the bottom of articles.
 - **Analytiscs**  
@@ -63,7 +63,7 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
 
 You can learn how to use them from [Configuration](https://github.com/wuchong/jacman/wiki/配置指南).
 
-##Sites
+## Sites
 - [Jacman Theme](http://jacman.wuchong.me) - The demo site of Jacman Theme
 - [Jark's Blog](http://wuchong.me) - The author's blog of Jacman
 - [阿杜个人博客](http://ralphadu.com) - 阿杜个人博客
