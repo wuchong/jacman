@@ -89,6 +89,8 @@ links:
 #### Comment
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
+gentie_key:           ## your 163 gentie key, see https://gentie.163.com/
+
 
 #### Share button
 jiathis:
