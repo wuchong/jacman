@@ -101,5 +101,5 @@ You can learn how to use them from [Configuration](https://github.com/wuchong/ja
 
 If you are using Jacman,you can add your site [here](https://github.com/wuchong/jacman/wiki/Sites) ! I'll push the available sites here.
 
-##License
+## License
 [MIT](/LICENSE)
