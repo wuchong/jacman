@@ -97,7 +97,7 @@ You can learn how to use them from [Configuration](https://github.com/wuchong/ja
 - [Mutse's blog](http://mutse.github.io) - Love Life, Love open source
 - [唐巧的技术博客](http://blog.devtang.com/) - 巧神
 - [Salogs](http://salogs.com/) - 拥抱开源，分享经验!
-
+- [graysongs's club](http://www.graysongs.club/) - share video games here!
 
 If you are using Jacman,you can add your site [here](https://github.com/wuchong/jacman/wiki/Sites) ! I'll push the available sites here.
 
