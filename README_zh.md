@@ -10,26 +10,26 @@ Jacman 是为 [Hexo](http://hexo.io) 设计的一款清新且具有响应式的�
 
 [如何使用 Jacman 主题](http://jacman.wuchong.me/2014/11/20/how-to-use-jacman/)
 
-##安装教程
-###安装
+## 安装教程
+### 安装
 ```
 $ git clone https://github.com/wuchong/jacman.git themes/jacman
 ```
 **Jacman 需要 Hexo 2.7 及以上版本** 
-###启用
+### 启用
 修改博客根目录下的配置文件 `_config.yml`，把`theme`的值修改为 `jacman`.
-###更新
+### 更新
 ```
 cd themes/jacman
 git pull origin master
 ```
 **请先备份您主题目录下的 `_config.yml` 文件后再升级。**
 
-##配置指南
+## 配置指南
 
 修改  `/themes/jacman/_config.yml` 中的配置。通过[配置指南wiki](https://github.com/wuchong/jacman/wiki/%E9%85%8D%E7%BD%AE%E6%8C%87%E5%8D%97)了解更多
 
-##功能
+## 功能
 - **菜单 menu**  
  主导航菜单
 - **控件 widget**  
@@ -43,7 +43,7 @@ git pull origin master
 - **目录 toc**  
  在文章中和侧边栏可以显示目录。
 - **评论 comments**  
- 支持 [多说](http://duoshuo.com/) & [disqus](https://disqus.com/) 评论。
+ 支持 [多说](http://duoshuo.com/) & [disqus](https://disqus.com/) & [网易云跟帖](https://gentie.163.com/index.html) & [畅言](http://changyan.kuaizhan.com/) 评论。
 - **分享 jiathis**  
  启用 内建分享工具 或 [加网](http://www.jiathis.com/) 分享系统。
 - **网站统计 Analytiscs**  
@@ -63,7 +63,7 @@ git pull origin master
 
 你可以通过[配置指南](https://github.com/wuchong/jacman/wiki/配置指南)了解更多使用细节。
 
-##网站列表
+## 网站列表
 - [Jacman Theme](http://jacman.wuchong.me) - The demo site of Jacman Theme
 - [Jark's Blog](http://wuchong.me) - The author's blog of Jacman
 - [阿杜个人博客](http://ralphadu.com) - 阿杜个人博客
@@ -97,8 +97,9 @@ git pull origin master
 - [TadGuo's pages](http://watermeion.github.io) - More is different.
 - [Mutse's blog](http://mutse.github.io) - 爱生活，爱开源
 - [Salogs](http://salogs.com/) - 拥抱开源，分享经验!
+- [叉叉哥的博客](http://xxgblog.com/) - 叉叉哥的博客
 
 如果你正在使用 Jacman主题，欢迎将网址添加到[wiki的网站列表](https://github.com/wuchong/jacman/wiki/Sites)。我会不定期进行整理。
 
-##协议
+## 协议
 [MIT](/LICENSE)

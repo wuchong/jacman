@@ -90,6 +90,8 @@ links:
 duoshuo_shortname:    ## e.g. wuchong   your duoshuo short name.
 disqus_shortname:     ## e.g. wuchong   your disqus short name.
 gentie_key:           ## your 163 gentie key, see https://gentie.163.com/
+changyan_appid:       ## changyan app id, see http://changyan.kuaizhan.com/
+changyan_appkey:      ## changyan app key, see http://changyan.kuaizhan.com/
 
 
 #### Share button
