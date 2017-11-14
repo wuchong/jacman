@@ -43,7 +43,7 @@ Modify settings in  `/themes/jacman/_config.yml`. [Learn More](https://github.co
 - **toc**  
  Show Table Of Contents in article & aside.
 - **comments**  
- [duoshuo](http://duoshuo.com/) & [disqus](https://disqus.com/) & [网易云跟帖](https://gentie.163.com/index.html) are supported.
+ [duoshuo](http://duoshuo.com/) & [disqus](https://disqus.com/) & [网易云跟帖](https://gentie.163.com/index.html) & [畅言](http://changyan.kuaizhan.com/) are supported.
 - **jiathis**  
  Build-in share tool or [JiaThis](http://www.jiathis.com/) share buttons at the bottom of articles.
 - **Analytiscs**  
@@ -98,6 +98,7 @@ You can learn how to use them from [Configuration](https://github.com/wuchong/ja
 - [唐巧的技术博客](http://blog.devtang.com/) - 巧神
 - [Salogs](http://salogs.com/) - 拥抱开源，分享经验!
 - [graysongs's club](http://www.graysongs.club/) - share video games here!
+- [叉叉哥的博客](http://xxgblog.com/) - 叉叉哥的博客
 
 If you are using Jacman,you can add your site [here](https://github.com/wuchong/jacman/wiki/Sites) ! I'll push the available sites here.
 
